@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.beliefdrivendesign.afatj'
+version '1.0-SNAPSHOT'
+
+task factoryOO(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.factory_pattern.oo.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task factoryFP(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.factory_pattern.fp.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task decoratorOO(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.decorator_pattern.oo.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task decoratorFP(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.decorator_pattern.fp.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task strategyOO(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.strategy_pattern.oo.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task strategyFP(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.strategy_pattern.fp.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task builderOO(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.builder_pattern.oo.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task builderFP(type: JavaExec) {
+    mainClass = 'com.beliefdrivendesign.afatj.builder_pattern.fp.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+repositories {
+    mavenCentral()
+}
+sourceCompatibility = JavaVersion.VERSION_16
+targetCompatibility = JavaVersion.VERSION_16

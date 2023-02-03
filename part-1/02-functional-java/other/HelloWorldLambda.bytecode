@@ -1,0 +1,96 @@
+Classfile HelloWorldLambda.class
+  SHA-256 checksum d9cfea924d61ea5a0f291015f517ea21d9d95bb5fd0cfef32c7bfaddfcbb7436
+  Compiled from "HelloWorldLambda.java"
+public class HelloWorldLambda
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #15                         // HelloWorldLambda
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = InvokeDynamic      #0:#8          // #0:sayHello:()LHelloWorld;
+   #8 = NameAndType        #9:#10         // sayHello:()LHelloWorld;
+   #9 = Utf8               sayHello
+  #10 = Utf8               ()LHelloWorld;
+  #11 = InvokeDynamic      #1:#12         // #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #12 = NameAndType        #13:#14        // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #13 = Utf8               makeConcatWithConstants
+  #14 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #15 = Class              #16            // HelloWorldLambda
+  #16 = Utf8               HelloWorldLambda
+  #17 = Utf8               Code
+  #18 = Utf8               LineNumberTable
+  #19 = Utf8               main
+  #20 = Utf8               ([Ljava/lang/String;)V
+  #21 = Utf8               lambda$main$0
+  #22 = Utf8               SourceFile
+  #23 = Utf8               HelloWorldLambda.java
+  #24 = Utf8               BootstrapMethods
+  #25 = MethodHandle       6:#26          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #26 = Methodref          #27.#28        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #27 = Class              #29            // java/lang/invoke/LambdaMetafactory
+  #28 = NameAndType        #30:#31        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #29 = Utf8               java/lang/invoke/LambdaMetafactory
+  #30 = Utf8               metafactory
+  #31 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #32 = MethodType         #14            //  (Ljava/lang/String;)Ljava/lang/String;
+  #33 = MethodHandle       6:#34          // REF_invokeStatic HelloWorldLambda.lambda$main$0:(Ljava/lang/String;)Ljava/lang/String;
+  #34 = Methodref          #15.#35        // HelloWorldLambda.lambda$main$0:(Ljava/lang/String;)Ljava/lang/String;
+  #35 = NameAndType        #21:#14        // lambda$main$0:(Ljava/lang/String;)Ljava/lang/String;
+  #36 = MethodHandle       6:#37          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #37 = Methodref          #38.#39        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #38 = Class              #40            // java/lang/invoke/StringConcatFactory
+  #39 = NameAndType        #13:#41        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #40 = Utf8               java/lang/invoke/StringConcatFactory
+  #41 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #42 = String             #43            // hello, \u0001!
+  #43 = Utf8               hello, \u0001!
+  #44 = Utf8               InnerClasses
+  #45 = Class              #46            // java/lang/invoke/MethodHandles$Lookup
+  #46 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #47 = Class              #48            // java/lang/invoke/MethodHandles
+  #48 = Utf8               java/lang/invoke/MethodHandles
+  #49 = Utf8               Lookup
+{
+  public HelloWorldLambda();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 12: 0
+
+  public static void main(java.lang.String...);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0089) ACC_PUBLIC, ACC_STATIC, ACC_VARARGS
+    Code:
+      stack=1, locals=2, args_size=1
+         0: invokedynamic #7,  0              // InvokeDynamic #0:sayHello:()LHelloWorld;
+         5: astore_1
+         6: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 6
+}
+SourceFile: "HelloWorldLambda.java"
+BootstrapMethods:
+  0: #25 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #32 (Ljava/lang/String;)Ljava/lang/String;
+      #33 REF_invokeStatic HelloWorldLambda.lambda$main$0:(Ljava/lang/String;)Ljava/lang/String;
+      #32 (Ljava/lang/String;)Ljava/lang/String;
+  1: #36 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #42 hello, \u0001!
+InnerClasses:
+  public static final #49= #45 of #47;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
