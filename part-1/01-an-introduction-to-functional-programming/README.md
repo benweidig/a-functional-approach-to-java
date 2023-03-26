@@ -42,7 +42,7 @@ int newTreasuresFound = findTreasure(6);
 totalTreasure = totalTreasure + newTreasuresFound;
 
 // if-else is a statement that evaluates it's condition, which is an expression
-if (treasureCounter > 10) {
+if (totalTreasure > 10) {
     // A statement not returning any kind of result
     System.out.println("You have a lot of treasure!");
 } else {
