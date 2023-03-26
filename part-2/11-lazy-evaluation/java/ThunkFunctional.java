@@ -44,10 +44,6 @@ public class ThunkFunctional {
             return Thunk.of(() -> mapper.apply(get()));
         }
 
-        public <R> Thunk<R> flatMap(Function<T, Thunk<R>> mapper) {
-            return Thunk.of(() -> mapper.apply(get()).get());
-        }
-
         public void accept(Consumer<T> consumer) {
             consumer.accept(get());
         }
