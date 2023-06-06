@@ -2,15 +2,15 @@
 
 ## Iterative Streams
 
-JShell scripts shwoing three variants of an iteration:
+JShell scripts showing three variants of an iteration:
 
 * `for`-loop
 * `Stream.iterate`
 * `IntStream.iterate` (Java 9+)
 
 [`jshell/iterative-stream-for-loop.java`](jshell/iterative-stream-for-loop.java)  
-[`jshell/iterative-stream-intstream-iterate-java8.java`](jshell/iterative-stream-for-loop.java)  
-[`jshell/iterative-stream-intstream-iterate-java9.java`](jshell/iterative-stream-for-loop.java)
+[`jshell/iterative-stream-intstream-iterate-java8.java`](jshell/iterative-stream-intstream-iterate-java8.java)  
+[`jshell/iterative-stream-intstream-iterate-java9.java`](jshell/iterative-stream-intstream-iterate-java9.java)
 
 ## Infinite Streams
 
@@ -25,7 +25,7 @@ JShell script illustrating a generated parallel unordered Stream overshooting it
 
 JShell script showing how to create a `String[]` from a Stream.
 
-[`jshell/arrays-toarray.java`](jshell/arrays-toarray.java)
+[`jshell/stream-toarray.java`](jshell/stream-toarray.java)
 
 
 ## Working with File I/O
