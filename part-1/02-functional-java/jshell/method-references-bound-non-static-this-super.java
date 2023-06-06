@@ -14,7 +14,7 @@ class SuperClass {
 class SubClass extends SuperClass {
 
     @Override
-    String doWork(String input){
+    String doWork(String input) {
         return "this: " + input;
     }
 

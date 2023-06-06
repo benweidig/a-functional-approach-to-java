@@ -12,7 +12,29 @@
 
 JShell script of how to write lambdas with different verbosity levels.
 
-[`jshell/lambda-variants.java`](jshell/lambda-variants.java)
+```java
+// The most verbose variant: an explicitly typed parameter in parentheses
+// and a body block.
+(String input) -> {
+    return input != null;
+}
+
+// The first mixed variant: type inference for parameters allows removing the
+//  explicit type, and a single parameter doesn't need parentheses.
+// That shortens the lambda declaration slightly without removing information
+// due to the surrounding context.
+input -> {
+    return input != null;
+}
+
+// The second mixed variant: an explicitly typed parameter in parentheses but
+// a single expression body instead of a block; no curly braces or return
+// statement needed.
+(String input) -> input != null
+
+// The most concise variant, as the body is reducible to a single expression.
+input -> input != null <4>
+```
 
 #### Example 2-2. Simplified java.util.functional.Predicate<T>
 
@@ -62,11 +84,11 @@ javap -v HelloWorldLambda
 The results of `javap` are also available in the `other` folder.
 
 [`java/HelloWorld.java`](java/HelloWorld.java)  
-[`java/HelloWorldAnonymous.java`](java/HelloWorld.java)  
-[`java/HelloWorldLambda.java`](java/HelloWorld.java)  
+[`java/HelloWorldAnonymous.java`](java/HelloWorldAnonymous.java)  
+[`java/HelloWorldLambda.java`](java/HelloWorldLambda.java)  
 
-[`other/HelloWorldAnonymous.bytecode`](java/HelloWorld.java)  
-[`other/HelloWorldLambda.bytecode`](other/HelloWorldAnonymous.bytecode)
+[`other/HelloWorldAnonymous.bytecode`](other/HelloWorldAnonymous.bytecode)  
+[`other/HelloWorldLambda.bytecode`](other/HelloWorldLambda.bytecode)
 
 
 ## Lambdas in Action
@@ -92,13 +114,22 @@ JShell script showing that ad-hoc created lambdas infer their type.
 
 How to call lambdas, comparing JavaScript and Java.
 
-[`other/calling-lambdas.js`](other/calling-lambdas.js)  
-[`jshell/calling-lambdas.java`](other/calling-lambdas.java)
+```javascript
+let helloWorldJs = name => "hello, " + name + "!"
+
+let resultJs = helloWorldJs("Ben")
+```
+
+```java
+Function<String, String> helloWorld = name -> "hello, " + name + "!";
+
+var result = helloWorld.apply("Ben");
+```
 
 
 ### Method References
 
-#### Example 2-8. Method references and Streams
+#### Example 2-8. Method References and Streams
 
 JShell script highlighting the difference between using lambdas and method references in a Stream pipeline.
 
@@ -128,7 +159,7 @@ JShell script of how to use unbound non-static method references.
 
 JShell script of how to use constructor references.
 
-[`jshell/method-references-constructor.java`](jshell/method-references-unbound-non-static.java)
+[`jshell/method-references-constructor.java`](jshell/method-references-constructor.java)
 
 
 ## Functional Programming Concepts in Java
