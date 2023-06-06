@@ -21,12 +21,12 @@ public record Point(int x, int y) {
         }
 
         public Builder y(int y) {
-        this.y = y;
-        return this;
+            this.y = y;
+            return this;
         }
 
         public Point build() {
-        return new Point(this.x, this.y);
+            return new Point(this.x, this.y);
         }
     }
 }

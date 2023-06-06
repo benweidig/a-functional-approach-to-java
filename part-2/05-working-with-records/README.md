@@ -38,8 +38,8 @@ Java class of the User POJO as a Record.
 
 Disassembled Java classes of the immutable User POJO and Record.
 
-[`other/UserImmutable.disassembled`](java/UserImmutable.disassembled)  
-[`other/UserRecord.disassembled`](java/UserRecord.disassembled)
+[`other/UserImmutable.disassembled`](other/UserImmutable.disassembled)  
+[`other/UserRecord.disassembled`](other/UserRecord.disassembled)
 
 
 ### Record Features
@@ -49,7 +49,7 @@ Disassembled Java classes of the immutable User POJO and Record.
 JShell scripts of a User record and how to override a component accessor.
 
 [`jshell/user-record.java`](jshell/user-record.java)  
-[`jshell/user-record-component-override.java`](java/user-record-component-override.java)
+[`jshell/user-record-override-component.java`](jshell/user-record-override-component.java)
 
 #### Canonical, Compact, and Custom Constructors
 
@@ -96,8 +96,8 @@ JShell scripts using additional constructors for sensible default values and fac
 
 JShell scripts demonstrating the builder pattern for the User Record.
 
-[`jshell/record-builder.java`](jshell/record-builder.java)  
-[`jshell/record-builder-nested.java`](jshell/record-builder-nested.java)
+[`jshell/user-record-builder.java`](jshell/user-record-builder.java)  
+[`jshell/user-record-builder-nested.java`](jshell/user-record-builder-nested.java)
 
 
 ## Use-Cases and Common Practices
@@ -141,7 +141,7 @@ JShell script illustrating how to use the builder pattern for copying Records.
 
 JShell script showing a Record as a local nominal tuple.
 
-[`jshell/record-local.java`](jshell/record-local.java)
+[`jshell/user-record-local.java`](jshell/user-record-local.java)
 
 
 ### Better Optional Data Handling
@@ -165,5 +165,5 @@ Java classes showing how to (de-)serialize Records with additional components.
 
 You have to rename the files to compile them because the class name has to be identical for (de-)serialization.
 
-[`java/PointSerialization.java`](jshell/PointSerialization.java)  
-[`java/PointSerializationIdentical.java`](jshell/PointSerializationIdentical.java)
+[`java/PointSerialization.java`](java/PointSerialization.java)  
+[`java/PointSerializationIdentical.java`](java/PointSerializationIdentical.java)
