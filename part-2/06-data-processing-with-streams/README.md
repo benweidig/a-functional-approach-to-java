@@ -21,7 +21,7 @@ JShell script illustrating internal iteration with a Stream.
 
 #### Example 6-3. Spliterator characteristics of `HashSet<T>`
 
-Excerpt from `java.util.HashSet` hihglighting its Spliterator characteristics.
+Excerpt from `java.util.HashSet` highlighting its Spliterator characteristics.
 
 [`other/HashSet.java`](other/HashSet.java)
 
@@ -88,13 +88,8 @@ JShell script using the `reduce` operation to aggregate Stream elements.
 
 JShell script using the `reduce` operation for immutable accumulation of numbers.
 
-[`jshell/reduce-immutable-aggregation.java`](jshell/reduce-immutable-aggregate.java)
+[`jshell/reduce-immutable-aggregation.java`](jshell/reduce-immutable-aggregation.java)
 
-#### Example 6-12. Immutable accumulation of numbers with a Stream
-
-JShell script using the `reduce` operation for immutable accumulation of numbers.
-
-[`jshell/reduce-immutable-aggregation.java`](jshell/reduce-immutable-aggregate.java)
 
 #### Example 6-13. Concatenating String elements with reduce and collect
 
