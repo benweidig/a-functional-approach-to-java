@@ -2,8 +2,7 @@
 
 ## Streams and Recursion
 
-
-An alterantive approach to recursion is using an infinite Stream pipeline with the recursive call wrapped in a functional interface.
+An alternative approach to recursion is using an infinite Stream pipeline with the recursive call wrapped in a functional interface.
 Such an interface has to represent all parts of a recursive algorithm:
 
 ```java
@@ -30,7 +29,7 @@ public interface RecursiveCall<T> {
                      .filter(RecursiveCall::isComplete)
                      .findFirst()
                      .get()
-                    .result();
+                     .result();
     }
 
     // A convenience method for creating a lambda representing
@@ -59,13 +58,13 @@ public interface RecursiveCall<T> {
 ```
 
 Calling `run()` will create and run an infinite Stream pipeline.
-The `Stream.iterate(...)` method applies the initial value (`this`) to the `UnaryOperator` (`this::apply* ).
+The `Stream.iterate(...)` method applies the initial value (`this`) to the `UnaryOperator` (`this::apply`).
 
 The result is then iteratively applied again to the `UnaryOperator` until `isComplete() == true`, and the Stream's terminal operation `findFirst()` is reached.
 
 This functional interface is an iterative wrapper for recursive-style calls, eliminating a `StackOverflowError`, or in the case of calculating factorials, a number overflow.
 
-As the example of calculating a factorial results in a number overflow quite quickly -- the biggest possible +long+ is 9,223,372,036,854,775,807, or 2^63-1, which lies between 20! and 21! -- a simpler example is chosen: summing up numbers.
+As the example of calculating a factorial results in a number overflow quite quickly – the biggest possible +long+ is 9,223,372,036,854,775,807, or 2^63-1, which lies between 20! and 21! – a simpler example is chosen: summing up numbers.
 
 The following code represents a recursive call, but as a `RecursiveCall<Long>`:
 
@@ -87,7 +86,7 @@ The invisible difference between recursion and "recursion-like" with Streams is 
 As the recursive version creates a new stack frame for every method invocation, the Stream works iteratively, and therefore has a consistent stack depth.
 It might differ if its implementation changes.
 Still, it will always be consistent, regardless of the required recursive steps.
-That allows you to use a recursive approach to solving a problem requiring a lot of nested calls which usually would throw a +StackOverflowError+.
+That allows you to use a recursive approach to solving a problem requiring a lot of nested calls which usually would throw a `StackOverflowError`.
 
 A Stream-based approach to recursion is a great proof-of-concept to highlight the functional capabilities of Java and Streams.
 However, I wouldn't recommend it as a general-purpose "real-world" solution.
