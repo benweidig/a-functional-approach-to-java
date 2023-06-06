@@ -6,13 +6,13 @@
 
 JShell script illustrating a naïve approach to counting words sequentially.
 
-[`jshell/war-and-piece-sequential.java`](jshell/war-and-piece-sequential.java)
+[`jshell/war-and-peace-sequential.java`](jshell/war-and-peace-sequential.java)
 
 ### Example 8-1. Sequentially counting words in "War and Peace"
 
 JShell script showing how to improve the previous example with a parallel Stream.
 
-[`jshell/war-and-piece-parallel.java`](jshell/war-and-piece-parallel.java)
+[`jshell/war-and-peace-parallel.java`](jshell/war-and-peace-parallel.java)
 
 
 ## When to Use and When to Avoid Parallel Streams
