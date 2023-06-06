@@ -41,8 +41,7 @@ Java interface of a `TriFunction`.
 
 JShell scripts showing arity compatibility.
 
-[`jshell/aritiy-compatibility-valid.java`](jshell/aritiy-compatibility-valid.java)  
-[`jshell/aritiy-compatibility-invalid.java`](jshell/aritiy-compatibility-invalid.java)
+[`jshell/arity-compatibility.java`](jshell/arity-compatibility.java)  
 
 #### Bridging Functional Interfaces
 
