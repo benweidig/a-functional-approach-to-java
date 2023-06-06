@@ -37,7 +37,7 @@ JShell script of loading and caching content without Optionals.
 
 #### Example 9-5. Loading content with an Optional call chain
 
-[`jshell/loading-content-with-optionals-call-chain.java`](jshell/loading-content-with-optionals-call-chain.java)
+[`jshell/loading-content-with-optional-call-chain.java`](jshell/loading-content-with-optional-call-chain.java)
 
 
 ### Building Optional Pipelines

@@ -26,4 +26,5 @@ Optional<Content> get(String contentId) {
                    .or(() -> loadFromDB(contentId)) 
                    .filter(Content::isPublished); 
 }
+
 get("ABC");
