@@ -25,7 +25,7 @@ Modified JShell script of the previous script with an unwieldy `try-catch` block
 
 JShell script showing how to extract throwing code into a "safe" method.
 
-[`jshell/safe-method-extraction.java`](jshell/safe-method-extraction.java)
+[`java/SafeMethodExtraction.java`](java/SafeMethodExtraction.java)
 
 
 ### Un-Checking Exceptions
@@ -34,7 +34,7 @@ JShell script showing how to extract throwing code into a "safe" method.
 
 Java interface of a custom `java.util.Function` variant and how to use it.
 
-[`java/ThrowingFunction.java`](java/ThrowingFunction.java)
+[`java/UncheckingExceptions.java`](java/UncheckingExceptions.java)
 
 
 ### Sneaky Throws
@@ -58,7 +58,7 @@ JShell script showing how to design a method to use Optionals to mitigate Except
 
 Go code of how to return a tuple including the error itself.
 
-[`other/errors-as-values.java`](other/errors-as-values)
+[`other/errors-as-values.go`](other/errors-as-values.go)
 
 #### Creating a Result Type
 
@@ -105,6 +105,6 @@ Scala code illustrating the _try/success/failure_ pattern.
 
 [`java/TryApply.java`](java/TryApply.java)
 
-#### Example 10-12. Implementing Function<T, Optional<R>>
+#### Example 10-12. Implementing Function<T, Optional&lt;R>>
 
 [`java/TryFunction.java`](java/TryFunction.java)
