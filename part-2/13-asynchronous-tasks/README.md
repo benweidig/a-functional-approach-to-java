@@ -2,14 +2,14 @@
 
 ## Java Futures
 
-### Example 13-1. Future<T> flow of execution
+### Example 13-1. Future&lt;T> flow of execution
 
 Java code executing a `Callable<T>` as a `Future<T>`.
 
-[`java/FutureFlowOfExecution.java`](jshell/FutureFlowOfExecution.java)
+[`java/FutureFlowOfExecution.java`](java/FutureFlowOfExecution.java)
 
 
-## Designing Asnychronous Pupelines with CompletableFuture<T>
+## Designing Asnychronous Pipelines with CompletableFuture<T>
 
 ### Example 13-2. CompletableFuture creation with convenience methods
 
@@ -35,7 +35,7 @@ JShell script of nested stages.
 
 ### Example 13-5. Either operations and rejected stages
 
-JShell script of either operations.
+JShell script of Either operations.
 
 [`jshell/either-rejected.java`](jshell/either-rejected.java)
 
