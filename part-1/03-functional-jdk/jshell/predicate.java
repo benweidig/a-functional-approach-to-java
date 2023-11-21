@@ -5,4 +5,4 @@
 
 Predicate<Integer> over9000 = $ -> $ > 9_000;
 
-Integer result = over9000.test(1_234);
+Boolean result = over9000.test(1_234);
