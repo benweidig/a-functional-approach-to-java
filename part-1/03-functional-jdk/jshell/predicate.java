@@ -3,6 +3,6 @@
  * Chapter 3 - Functional JDK
  */
 
-Predicate<Integer> over9000 = $ -> $ > 9_000;
+Predicate<Integer> over9000 = i -> i > 9_000;
 
-Boolean result = over9000.test(1_234);
+boolean result = over9000.test(1_234);
