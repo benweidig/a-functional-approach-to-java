@@ -60,7 +60,7 @@ if (totalTreasure > 10) {
 
 ```java
 public String toLowercase(String str) {
-    return str;
+    return str.toLowerCase();
 }
 ```
 
