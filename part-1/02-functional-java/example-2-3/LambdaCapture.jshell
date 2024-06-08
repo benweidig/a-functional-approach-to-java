@@ -1,11 +1,11 @@
-/*
+/**
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 2 - Functional Java
  * 
  * Example 2-3. Lambda variable capture
  */
 
-void capture() {
+Runnable capture() {
     // The variable is declared in the scope of capture
     var theAnswer = 42;
 
@@ -13,11 +13,9 @@ void capture() {
         // The lambda capture theAnswer for its operation
         () -> System.out.println("the answer is " + theAnswer);
 
-    run(printAnswer);
+    return printAnswer;
 }
 
-void run(Runnable r) {
-    r.run();
-}
 
-capture();
+Runnable r = capture();
+r.run();

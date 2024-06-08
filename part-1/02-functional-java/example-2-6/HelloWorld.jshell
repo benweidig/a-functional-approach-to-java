@@ -30,5 +30,5 @@ HelloWorld helloWorldLambda = name -> "hello, " + name + "!";
 
 // RUN
 
-hellowWord.sayHello("Ben");
+helloWorld.sayHello("Ben");
 helloWorldLambda.sayHello("Ben");

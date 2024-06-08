@@ -1,12 +1,15 @@
-/*
+import java.util.ArrayList;
+import java.util.List;
+
+/**
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 2 - Functional Java
  *
  * Example 2-4. Change data behind a final variable
+ * 
+ * THERE'S NO JSHELL VARIANT AS THE KEYWORD FINAL DOESN'T
+ * WORK AS EXPECTED IN THE REPL
  */
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ReassignFinalVariable {
 
