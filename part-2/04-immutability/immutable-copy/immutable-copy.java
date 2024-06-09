@@ -1,7 +1,10 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 4 - Immutabilty
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 4 - Immutabilty
+//
+// The State of Java Immtuability
+// > Immutable Collections
+//
 
 // SETUP ORIGINAL LIST
 List<String> original = new ArrayList<>();

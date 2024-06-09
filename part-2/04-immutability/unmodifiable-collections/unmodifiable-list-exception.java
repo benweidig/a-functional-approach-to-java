@@ -1,7 +1,10 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 4 - Immutabilty
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 4 - Immutabilty
+//
+// The State of Java Immutability
+// > Immutable Collections
+//
 
 List<String> modifiable = new ArrayList<>();
 modifiable.add("blue");
