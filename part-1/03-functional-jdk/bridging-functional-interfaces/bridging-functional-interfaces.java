@@ -1,14 +1,17 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Why So Many Functional Interface Variants?
+// > Bridging Functional Interfaces
+//
 
 interface LikePredicate<T> {
     boolean test(T value);
 }
 
 
-LikePredicate<String> isNull = $ -> $ == null;
+LikePredicate<String> isNull = str -> str == null;
 
 /*
 Predicate<String> wontCompile = isNull;

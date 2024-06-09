@@ -1,7 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Example 3-1. Java arity compatibility
+//
 
 UnaryOperator<String> unaryOp = String::toUpperCase;
 

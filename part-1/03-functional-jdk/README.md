@@ -4,127 +4,73 @@
 
 ### Functions
 
-JShell script of a `java.util.function.Function<T>`
+Examples for `java.util.function.Function<T, R>`
 
-[`jshell/function.java`](jshell/function.java)
+[Figure 3-1](figure-3-1)
 
 ### Consumers
 
-JShell script of a `java.util.function.Consumer<T>`
+Examples for `java.util.function.Consumer<T>`
 
-[`jshell/consumer.java`](jshell/consumer.java)
+[Figure 3-2](figure-3-2)
 
 ### Suppliers
 
-JShell script of a `java.util.function.Supplier<T>`
+Examples for `java.util.function.Supplier<T>`
 
-[`jshell/supplier.java`](jshell/supplier.java)
+[Figure 3-3](figure-3-3)
 
 ### Predicates
 
-JShell script of a `java.util.function.Predicate<T>`
+Examples for `java.util.function.Predicate<T>`
 
-[`jshell/predicate.java`](jshell/predicate.java)
+[Figure 3-4](figure-3-4)
 
 
 ## Why So Many Functional Interface Variants?
 
 ### Function Arity
 
-#### TriFunction
-
-Java interface of a `TriFunction`.
-
-[`java/TriFunction.java`](java/TriFunction.java)
-
 #### Java Arity Compatibility
 
-JShell scripts showing arity compatibility.
+Code showing arity compatibility.
 
-[`jshell/arity-compatibility.java`](jshell/arity-compatibility.java)  
+[Example 3-1](example-3-1)
 
 #### Bridging Functional Interfaces
 
-JShell script of how to bridge SAM-identical but type incompatible functional interfaces.
+Example of how to bridge SAM-identical but type incompatible functional interfaces.
 
-[`jshell/bridging-functional-interfaces.java`](jshell/bridging-functional-interfaces.java)
+[bridging-functional-interfaces](bridging-functional-interfaces)
 
 
 ## Functional Composition
 
 ### Composition Direction
 
-JShell script illustrating the functional composition from both directions.
+Example illustrating the functional composition from both directions.
 
-[`jshell/functional-composition.java`](jshell/functional-composition.java)
+[Example 3-2](example-3-2)
 
 
-##  Extending Functional Support
-
-### Adding Default Methods
-
-This excerpt from `java.util.Collection<E>` shows how `default` methods are used to retrofit methods without breaking backward compatibility.
-
-```java
-public interface Collection<E> extends Iterable<E> {
-
-    default Stream<E> stream() {
-        return StreamSupport.stream(spliterator(), false);
-    }
-
-    default Stream<E> parallelStream() {
-        return StreamSupport.stream(spliterator(), true);
-    }
-
-  // ...
-}
-```
+## Extending Functional Support
 
 ### Default Method Hierarchy
 
-These excerpts from `java.lang.Iterable<T>`, `java.util.Collection<E>`, and `java.util.ArrayList<E>` illustrate how different types override `default` methods.
+These are excerpts from `java.lang.Iterable<T>`, `java.util.Collection<E>`, and `java.util.ArrayList<E>`, to illustrate how different types override `default` methods.
 
-```java
-public interface Iterable<T> {
+[Example 3-3](example-3-3)
 
-    // The original definition with a common-sense implementation.
-    default Spliterator<T> spliterator() {
-        return Spliterators.spliteratorUnknownSize(iterator(), 0);
-    }
-
-    // ...
-}
-
-
-public interface Collection<E> extends Iterable<E> {
-
-    // The Collection interface can use more information to create a more
-    // specific Spliterator<E> that is available to allof its implementations.
-    @Override
-    default Spliterator<E> spliterator() {
-        return Spliterators.spliterator(this, 0);
-    }
-
-    // ...
-}
-
-
-public class ArrayList<E> extends AbstractList<E> implements List<E>, ... {
-
-    // The concrete implementation ArrayList<E>, which implements
-    // Collection<E> via List<E>, provides an even further
-    // specialized +Spliterator<E>.
-    @Override
-    public Spliterator<E> spliterator() {
-        return new ArrayListSpliterator(0, -1, 0);
-    }
-
-    // ...
-}
-```
 
 #### Creating Static Helpers
 
-Java class of a simple functional compositor helper class.
+Creating a compose method.
 
-[`java/Compositor.java`](java/Compositor.java)
+[Example 3-4](example-3-4)
+
+
+Java classes of a simple functional compositor helper class and how to use it
+
+[Example 3-5](example-3-5)
+
+[Example 3-6](example-3-6)
