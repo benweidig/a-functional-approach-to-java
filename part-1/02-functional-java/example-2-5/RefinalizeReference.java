@@ -9,7 +9,6 @@ import java.util.function.Predicate;
  * THERE'S NO JSHELL VARIANT AS THE KEYWORD FINAL DOESN'T
  * WORK AS EXPECTED IN THE REPL
  */
-
 public class RefinalizeReference {
 
     public static void main(String... args) {

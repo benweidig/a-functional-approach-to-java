@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Example 2-6. Anonymous class vs. lambda expression
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-6. Anonymous class vs. lambda expression
+//
 
 // FUNCTIONAL INTERFACE (implicit)
 

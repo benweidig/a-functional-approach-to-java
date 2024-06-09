@@ -1,13 +1,13 @@
+import java.time.LocalDate;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
 /**
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 2 - Functional Java
  * 
  * Bound non-static method references
  */
-import java.time.LocalDate;
-import java.util.function.Function;
-import java.util.function.Predicate;
-
 public class MethodReferencesBoundNonStaticThisSuper {
 
     static class SuperClass {
@@ -16,7 +16,6 @@ public class MethodReferencesBoundNonStaticThisSuper {
             return "super: " + input;
         }
     }
-
 
     static class SubClass extends SuperClass {
 

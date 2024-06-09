@@ -5,7 +5,7 @@
  * Example 2-6. Anonymous class versus lambda expression
  */
 
- // AS ANONYMOUS CLASS
+// AS ANONYMOUS CLASS
 public class HelloWorldAnonymous {
 
     public static void main(String... args) {

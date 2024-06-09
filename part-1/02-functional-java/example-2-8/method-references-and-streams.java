@@ -1,12 +1,12 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Example 2-8. Method references and Streams
- * 
- * FOR JSHELL USE YOU HAVE TO COPY THE CODE MANUALLY,
- * AS THE LINE BREAK CONFUSE JSHELL IF PIPED.
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-8. Method references and Streams
+//
+// FOR JSHELL USE YOU HAVE TO COPY THE CODE MANUALLY,
+// AS THE LINE BREAK CONFUSE JSHELL IF PIPED.
+//
 
 // A simplistic Customer type so the code compiles
 class Customer {

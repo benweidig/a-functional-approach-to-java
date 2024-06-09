@@ -5,7 +5,7 @@
  * Example 2-6. Anonymous class versus lambda expression
  */
 
- // FUNCTIONAL INTERFACE (implicit)
+// FUNCTIONAL INTERFACE (implicit)
 public interface HelloWorld {
 
     String sayHello(String name);

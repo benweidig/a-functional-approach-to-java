@@ -1,12 +1,12 @@
+import java.util.Locale;
+import java.util.function.Function;
+
 /**
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 2 - Functional Java
  * 
  * Constructor references
  */
-import java.util.Locale;
-import java.util.function.Function;
-
 public class MethodReferencesConstructor {
 
     public static void main(String... args) {

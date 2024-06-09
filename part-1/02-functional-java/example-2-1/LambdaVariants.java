@@ -6,7 +6,6 @@ import java.util.function.Predicate;
  *
  * Example 2-1. Different ways of writing the same lambda
  */
-
 public class LambdaVariants {
 
     public static void main(String... args) {

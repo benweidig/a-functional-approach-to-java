@@ -8,7 +8,6 @@ import java.util.function.Supplier;
  *
  * Example 2-9. Memoization with Map#computeIfAbsent
  */
-
 public class Memoization {
 
     private static final Map<String, Object> CACHE = new HashMap<>();

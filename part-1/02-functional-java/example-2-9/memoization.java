@@ -1,9 +1,9 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- *
- * Example 2-9. Memoization with Map#computeIfAbsent
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-9. Memoization with Map#computeIfAbsent
+//
 
 Map<String, Object> CACHE = new HashMap<>();
 

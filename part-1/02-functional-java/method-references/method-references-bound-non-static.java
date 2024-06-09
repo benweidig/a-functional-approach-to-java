@@ -1,10 +1,11 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Bound non-static method references
- */
 import java.time.LocalDate;
+
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Bound non-static method references
+//
 
 // LAMBDA BASED ON EXISTING OBJECT
 var now = LocalDate.now();

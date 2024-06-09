@@ -6,7 +6,6 @@ import java.util.List;
  * 
  * Example 2-8. Method references and Streams
  */
-
 public class MethodReferencesAndStreams {
 
     // A simplistic Customer type so the code compiles

@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Static method references
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Static method references
+//
 
 // LAMBDA
 Function<Integer, String> asLambda = i -> Integer.toHexString(i);

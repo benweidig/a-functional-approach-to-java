@@ -1,9 +1,9 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- *
- * Example 2-1. Different ways of writing the same lambda
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-1. Different ways of writing the same lambda
+//
 
 // MOST VERBOSE OPTION
 // - Typed parameters

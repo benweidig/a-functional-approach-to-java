@@ -1,11 +1,11 @@
 import java.util.function.UnaryOperator;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- *
- * Example 2-10. First-class Java Lambdas
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-10. First-class Java Lambdas
+//
 
 // VARIABLE ASSIGNMENT
 

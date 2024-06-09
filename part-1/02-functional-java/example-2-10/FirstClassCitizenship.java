@@ -6,7 +6,6 @@ import java.util.function.UnaryOperator;
  *
  * Example 2-10. First-class Java Lambdas
  */
-
 public class FirstClassCitizenship {
 
     public static void main(String... args) {
@@ -14,12 +13,15 @@ public class FirstClassCitizenship {
 
         UnaryOperator<Integer> quadraticFn = x -> x * x;
 
-        quadraticFn.apply(5);
+        var qresult = quadraticFn.apply(5);
+        System.out.println(qresult);
         // => 25
 
         UnaryOperator<Integer> multiplyWithFive = multiplyWith(5);
 
-        multiplyWithFive.apply(6);
+        var mresult = multiplyWithFive.apply(6);
+        System.out.println(mresult);
+        // => 25
         // => 30
     }
 

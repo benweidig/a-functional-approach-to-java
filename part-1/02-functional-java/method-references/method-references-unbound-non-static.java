@@ -1,9 +1,9 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Unbound non-static method references
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Unbound non-static method references
+//
 
 // LAMBDA
 Function<String, String> toLowerCaseLambda = str -> str.toLowerCase();

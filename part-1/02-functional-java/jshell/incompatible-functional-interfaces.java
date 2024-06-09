@@ -1,7 +1,7 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
 
 // Functional interface that an equivalent to java.util.Predicate<T>
 interface LikePredicate<T> {

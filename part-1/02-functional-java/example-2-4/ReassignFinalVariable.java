@@ -10,7 +10,6 @@ import java.util.List;
  * THERE'S NO JSHELL VARIANT AS THE KEYWORD FINAL DOESN'T
  * WORK AS EXPECTED IN THE REPL
  */
-
 public class ReassignFinalVariable {
 
     public static void main(String... args) {

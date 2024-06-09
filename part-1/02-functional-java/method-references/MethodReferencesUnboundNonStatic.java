@@ -1,12 +1,11 @@
+import java.util.function.Function;
+
 /**
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 2 - Functional Java
  * 
  * Unbound non-static method references
  */
-
-import java.util.function.Function;
-
 public class MethodReferencesUnboundNonStatic {
 
     public static void main(String... args) {

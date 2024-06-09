@@ -1,9 +1,9 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Bound non-static method references this/super
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Bound non-static method references this/super
+//
 
 class SuperClass {
 
