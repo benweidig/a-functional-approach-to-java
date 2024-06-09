@@ -19,6 +19,9 @@ Nevertheless, the examples should be helpful as a starting point to experiment.
 
 ### JShell
 
+Examples with lowercase-dash-separated names are JShell-compatible files.
+They have the `.java` extension to support _a little_ code highlighting.
+
 The examples from the book can mostly be run directly in [JShell](https://belief-driven-design.com/jshell-the-java-repl-82d804e6cbf/) by either running `jshell` and pasting the code into it or using a redirect, e.g., `jshell < file.java` instead.
 
 Some code, however, demonstrates invalid code, throws Exceptions, or won't compile at all.
