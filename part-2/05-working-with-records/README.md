@@ -6,8 +6,7 @@
 
 Tuples in different languages.
 
-[`other/tuples.py` (Python)](other/tuples.py)  
-[`other/tuples.swift` (Swift)](other/tuples.swift)
+[tuples](tuples)
 
 ### POJOs
 
@@ -15,19 +14,13 @@ Tuples in different languages.
 
 Java class of a simple User POJO.
 
-[`java/UserPOJO.java`](java/UserPOJO.java)
+[Example 5-1](example-5-1)
 
 #### Example 5-2. Simple immutable User type
 
 Java class of the User POJO converted to a simple immutable variant.
 
-[`java/UserImmutable.java`](java/UserImmutable.java)
-
-#### From POJO to Record
-
-Java class of the User POJO as a Record.
-
-[`java/UserRecord.java`](java/UserRecord.java)
+[Example 5-2](example-5-2)
 
 
 ## Records to the Rescue
@@ -38,126 +31,33 @@ Java class of the User POJO as a Record.
 
 Disassembled Java classes of the immutable User POJO and Record.
 
-[`other/UserImmutable.disassembled`](other/UserImmutable.disassembled)  
-[`other/UserRecord.disassembled`](other/UserRecord.disassembled)
-
+[Example 5-3](example-5-3)
 
 ### Record Features
 
-#### Component Accessors
+Collection of examples of different Record features.
 
-JShell scripts of a User record and how to override a component accessor.
-
-[`jshell/user-record.java`](jshell/user-record.java)  
-[`jshell/user-record-override-component.java`](jshell/user-record-override-component.java)
-
-#### Canonical, Compact, and Custom Constructors
-
-JShell scripts illustrating the different constructor types for Records.
-
-[`jshell/user-record-canonical.java`](jshell/user-record-canonical.java)  
-[`jshell/user-record-compact.java`](jshell/user-record-compact.java)
-
-#### Generics
-
-JShell script of how to use generics in Records.
-
-[`jshell/record-generics.java`](jshell/record-generics.java)
-
-#### Reflection
-
-TODO
-
+[Record Features](record-features)
 
 ### Missing Features
 
-#### Additional State
+Collection of examples of features that Records are lacking.
 
-JShell script showing how to add derived state to a Record.
-
-[`jshell/record-derived-state.java`](jshell/record-derived-state.java)
-
-
-#### Inheritance
-
-JShell script illustrating the use of shared interfaces.
-
-[`jshell/record-interfaces.java`](jshell/record-interfaces.java)
-
-
-#### Component Default Values and Convenience Constructors
-
-JShell scripts using additional constructors for sensible default values and factory methods for easier creation.
-
-[`jshell/record-additional-constructors.java`](jshell/record-additional-constructors.java)  
-[`jshell/record-factory-methods.java`](jshell/record-factory-methods.java)  
-
-#### Step-by-Step Creation
-
-JShell scripts demonstrating the builder pattern for the User Record.
-
-[`jshell/user-record-builder.java`](jshell/user-record-builder.java)  
-[`jshell/user-record-builder-nested.java`](jshell/user-record-builder-nested.java)
+[Missing Features](missing-features)
 
 
 ## Use-Cases and Common Practices
 
-### Record Validation
+Examples of Record Use-Cases and Common Practices.
 
-JShell script using the compact constructor for validation purposes.
-
-[`jshell/record-validation.java`](jshell/record-validation.java)  
-
-### Data Scrubbing
-
-JShell script using the compact constructor to normalize data.
-
-[`jshell/record-data-scrubbing.java`](jshell/record-data-scrubbing.java)
-
-
-### Increasing Immutability
-
-JShell script showing how to increase the immutability of Record components.
-
-[`jshell/record-increase-immutability.java`](jshell/record-increase-immutability.java)
-
-### Creating Modified Copies
-
-#### Wither Methods
-
-JShell scripts showing `with` factory methods, and a nested `With` Record.
-
-[`jshell/record-with.java`](jshell/record-with.java)  
-[`jshell/record-with-nested.java`](jshell/record-with-nested.java)
-
-#### Builder pattern
-
-JShell script illustrating how to use the builder pattern for copying Records.
-
-[`jshell/record-builder-pattern-copy.java`](jshell/record-builder-pattern-copy.java)
-
-
-### Records as Local Nominal Tuples
-
-JShell script showing a Record as a local nominal tuple.
-
-[`jshell/user-record-local.java`](jshell/user-record-local.java)
+[Use-Cases and Common Practices](use-cases-common-practices)
 
 
 ### Better Optional Data Handling
 
-#### Ensure non-null Container
+How to handle optional components.
 
-JShell script validating an `Optional<T>` with a compact constructor.
-
-[`jshell/record-non-null-container.java`](jshell/record-non-null-container.java)
-
-#### Add Convenience Constructors
-
-JShell script illustrating the use of a convenience constructor for `Optional<T>` components.
-
-[`jshell/record-convenience-optional.java`](jshell/record-convenience-optional.java)
-
+[Better Optional Data Handling](better-optional-data-handling)
 
 ### Serializing Evolving Records
 
@@ -165,5 +65,4 @@ Java classes showing how to (de-)serialize Records with additional components.
 
 You have to rename the files to compile them because the class name has to be identical for (de-)serialization.
 
-[`java/PointSerialization.java`](java/PointSerialization.java)  
-[`java/PointSerializationIdentical.java`](java/PointSerializationIdentical.java)
+[Serializing Evolving Records](serializing-evolving-records)
