@@ -52,6 +52,9 @@ Examples of Record Use-Cases and Common Practices.
 
 [Use-Cases and Common Practices](use-cases-common-practices)
 
+### Creating Modified Copies
+
+[Creating Modified Copies (wither)](wither)
 
 ### Better Optional Data Handling
 
@@ -66,3 +69,15 @@ Java classes showing how to (de-)serialize Records with additional components.
 You have to rename the files to compile them because the class name has to be identical for (de-)serialization.
 
 [Serializing Evolving Records](serializing-evolving-records)
+
+### Example 5-10. Group membership as sealed types instead of `Optional<String>
+
+Using sealed types instead of `Optional<T>`
+
+[Example 5-10](example-5-10)
+
+### Example 5-11. User Record with sealed interface Membership
+
+Convenience methods for sealed types
+
+[Example 5-11](example-5-11)

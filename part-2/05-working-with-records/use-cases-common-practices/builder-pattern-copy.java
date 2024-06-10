@@ -2,6 +2,7 @@
 // A FUNCTIONAL APPROACH TO JAVA
 // Chapter 5 - Working with Records
 //
+
 record Point(int x, int y) {
 
     static final class Builder {

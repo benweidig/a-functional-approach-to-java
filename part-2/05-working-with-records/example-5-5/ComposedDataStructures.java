@@ -4,7 +4,6 @@
  * 
  * Example 5-5. Canonical constructors in composed data structures
  */
-
  public class ComposedDataStructures {
 
     record Origin(int x, int y) {

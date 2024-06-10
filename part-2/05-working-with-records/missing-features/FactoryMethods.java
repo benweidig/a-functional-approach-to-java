@@ -2,8 +2,7 @@
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 5 - Working with Records
  */
-
- public class FactoryMethods {
+public class FactoryMethods {
 
     record Origin(int x, int y) {
         // NO BODY
