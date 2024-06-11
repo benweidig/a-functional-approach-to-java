@@ -1,0 +1,33 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 6 - Data Processing with Streams
+//
+// Example 6-12. Aggregate elements with the reduce operation
+//
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class ReduceAggregate {
+
+    public static void main(String[] args) {
+
+        var fruits = Stream.of("apple", "orange", "banana", "peach")
+                           // Any additional operations would be here.
+                           // This example only highlights the
+                           // aggregation aspect.
+                           .reduce(new ArrayList<>(),
+                                   (acc, fruit) -> {
+                                      var list = new ArrayList<>(acc);
+                                      list.add(fruit);
+                                      return list;
+                                   },
+                                   (lhs, rhs) -> {
+                                      var list = new ArrayList<>(lhs);
+                                      list.addAll(rhs);
+                                      return list;
+                                   });
+
+        System.out.println(fruits);
+    }
+}
