@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 8 - Parallel Data Processing with Streams
- *
- * Example 8-1. Sequentially counting words in "War and Peace"
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 8 - Parallel Data Processing with Streams
+//
+// Example 8-2. Parallel counting words in "War and Peace"
+//
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -24,23 +24,25 @@ var words = Pattern.compile("\\w+");
 
 Map<String, Integer> wordCount = null;
 
-try {
-    // LOAD CONTENT
-    var content = Files.readString(location);
-    wordCount = 
-        Stream.of(content)
-              // CLEAN CONTENT
+// LOAD CONTENT
+try (Stream<String> stream = Files.lines(location)) {
+
+    wordCount =
+        stream.parallel()
+              // CLEAN LINES
               .map(punctionaction::matcher)
               .map(matcher -> matcher.replaceAll(""))
+
               // SPLIT TO WORDS
               .map(whitespace::split)
               .flatMap(Arrays::stream)
               .filter(word -> words.matcher(word).matches())
+
               // COUNTING
               .map(String::toLowerCase)
-              .collect(Collectors.toMap(Function.identity(),
-                                        word -> 1,
-                                        Integer::sum));
+              .collect(Collectors.toConcurrentMap(Function.identity(),
+                                                  word -> 1,
+                                                  Integer::sum));
 } catch (IOException e) {
     // ...
 }
