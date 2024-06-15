@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 9 - Handling null with Optionals
- *
- * Example 9-6. Checking for Optional values
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 9 - Handling null with Optionals
+//
+// Example 9-6. Checking for Optional values
+//
 
 import java.util.Optional;
 

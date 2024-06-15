@@ -1,11 +1,15 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 9 - Handling null with Optionals
- *
- * Example 9-2. null type ambiguity
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 9 - Handling null with Optionals
+//
+// Example 9-2. null type ambiguity
+//
 
 // "TYPE-LESS" NULL AS AN ARGUMENT
+
+void methodAcceptingString(String str) {
+    // ...
+}
 
 methodAcceptingString(null);
 

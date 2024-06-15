@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 9 - Handling null with Optionals
- *
- * Example 9-4. Loading content without Optionals
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 9 - Handling null with Optionals
+//
+// Example 9-4. Loading content without Optionals
+//
 
 import java.util.HashMap;
 import java.util.Map;

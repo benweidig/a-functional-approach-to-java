@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 9 - Handling null with Optionals
- *
- * Example 9-11. Pseudo-code equivalent to the reduce operation
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 9 - Handling null with Optionals
+//
+// Example 9-11. Pseudo-code equivalent to the reduce operation
+//
 
 import java.util.functional.BinaryOperator;
 import java.util.Optional;

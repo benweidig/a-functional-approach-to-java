@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 9 - Handling null with Optionals
- *
- * Example 9-12. Using Optionals in Serializable types
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 9 - Handling null with Optionals
+//
+// Example 9-12. Using Optionals in Serializable types
+//
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

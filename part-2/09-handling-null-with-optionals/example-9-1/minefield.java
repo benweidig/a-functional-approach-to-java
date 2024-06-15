@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 9 - Handling null with Optionals
- *
- * Example 9-1. A minefield of possible nulls
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 9 - Handling null with Optionals
+//
+// Example 9-1. A minefield of possible nulls
+//
 
 record User(long id,
             String firstname,
@@ -13,7 +13,7 @@ record User(long id,
         return String.format("%s %s", firstname(), lastname());
     }
 
-    String intitials() {
+    String initials() {
         return String.format("%s%s",
                              firstname().substring(0, 1),
                              lastname().substring(0, 1));
