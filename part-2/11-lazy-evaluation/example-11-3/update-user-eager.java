@@ -1,17 +1,16 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 11 - Lazy Evaluation
- *
- * Example 11-3. Updating a User with eager method arguments
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 11 - Lazy Evaluation
+//
+// Example 11-3. Updating a User with eager method arguments
+//
 
 import java.util.Collections;
 import java.util.List;
 
+record Role(String name) { }
 
-record Role(String name) {}
-
-record User(List<Role> roles) {}
+record User(List<Role> roles) { }
 
 User updateUser(User user,
                 List<Role> availableRoles) {
@@ -30,7 +29,8 @@ var dao = new DAO();
 // HOW TO USE
 
 var user = new User(Collections.emptyList());
-
+System.out.println("User: " + user);
 var availableRoles = dao.loadAllAvailableRoles();
 
 var updatedUser = updateUser(user, availableRoles);
+System.out.println("Updated User: " + updatedUser);

@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 11 - Lazy Evaluation
- *
- * Example 11-5. A simple Thunk<T>
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 11 - Lazy Evaluation
+//
+// Example 11-5. A simple Thunk<T>
+//
 
 import java.util.Collections;
 import java.util.List;
@@ -37,11 +37,9 @@ public class ThunkSimple {
         }
     }
 
-    record Role(String name) {
-    }
+    record Role(String name) { }
 
-    record User(List<Role> roles) {
-    }
+    record User(List<Role> roles) { }
 
     static class DAO {
         public List<Role> loadAllAvailableRoles() {

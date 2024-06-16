@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 11 - Lazy Evaluation
- *
- * Example 11-2. Usage of logical short-circuit operators
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 11 - Lazy Evaluation
+//
+// Example 11-2. Usage of logical short-circuit operators
+//
 
 boolean left() {
     return true;

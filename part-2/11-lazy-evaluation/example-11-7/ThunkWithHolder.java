@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 11 - Lazy Evaluation
- *
- * Example 11-7. Thunk<T> with synchronized evaluation
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 11 - Lazy Evaluation
+//
+// Example 11-7. Thunk<T> with synchronized evaluation
+//
 
 import java.util.function.Supplier;
 

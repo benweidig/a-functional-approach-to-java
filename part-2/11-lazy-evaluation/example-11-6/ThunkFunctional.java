@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 11 - Lazy Evaluation
- *
- * Example 11-6. Functional additions to Thunk<T>
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 11 - Lazy Evaluation
+//
+// Example 11-6. Functional additions to Thunk<T>
+//
 
 import java.util.Collections;
 import java.util.List;
