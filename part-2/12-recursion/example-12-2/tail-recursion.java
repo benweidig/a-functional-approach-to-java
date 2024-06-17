@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 12 - Recursion
- *
- * Example 12-2. Calculating factorials with tail recursion
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 12 - Recursion
+//
+// Example 12-2. Calculating factorials with tail recursion
+//
 
 long factorialTail(long n,
                    long accumulator) {
@@ -19,3 +19,4 @@ long factorialTail(long n,
 }
 
 var result = factorialTail(4L, 1L);
+System.out.println("result: " + result);

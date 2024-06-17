@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 12 - Recursion
- *
- * Example 12-1. Calculating factorials with head recursion
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 12 - Recursion
+//
+// Example 12-1. Calculating factorials with head recursion
+//
 
 long factorialHead(long n) {
     if (n == 1L) {
@@ -16,3 +16,4 @@ long factorialHead(long n) {
 }
 
 var result = factorialHead(4L);
+System.out.println("result: " + result);

@@ -1,25 +1,29 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 12 - Recursion
- *
- * Example 12-4. Iterative tree traversal
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 12 - Recursion
+//
+// Example 12-4. Iterative tree traversal
+//
 
-public record Node<T>(T value, Node<T> left, Node<T> right) {
+import java.util.Stack;
 
-    public static <T> Node<T> of(T value, Node<T> left, Node<T> right) {
+// SETUP
+
+record Node<T>(T value, Node<T> left, Node<T> right) {
+
+    static <T> Node<T> of(T value, Node<T> left, Node<T> right) {
         return new Node<>(value, left, right);
     }
 
-    public static <T> Node<T> of(T value) {
+    static <T> Node<T> of(T value) {
         return new Node<>(value, null, null);
     }
 
-    public static <T> Node<T> left(T value, Node<T> left) {
+    static <T> Node<T> left(T value, Node<T> left) {
         return new Node<>(value, left, null);
     }
 
-    public static <T> Node<T> right(T value, Node<T> right) {
+    static <T> Node<T> right(T value, Node<T> right) {
         return new Node<>(value, null, right);
     }
 }
@@ -33,6 +37,8 @@ var root = Node.of("1",
                    Node.right("3",
                               Node.left("6",
                                         Node.of("9"))));
+
+// RELEVANT CODE
 
 void traverseIterative(Node<String> root) {
     var tmpNodes = new Stack<Node<String>>();

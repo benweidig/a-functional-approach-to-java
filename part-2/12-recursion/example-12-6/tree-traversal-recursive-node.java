@@ -1,25 +1,27 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 12 - Recursion
- *
- * Example 12-6. Extend Node<T> with traversal method
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 12 - Recursion
+//
+// Example 12-6. Extend Node<T> with traversal method
+//
 
-public record Node<T>(T value, Node<T> left, Node<T> right) {
+import java.util.function.Consumer;
 
-    public static <T> Node<T> of(T value, Node<T> left, Node<T> right) {
+record Node<T>(T value, Node<T> left, Node<T> right) {
+
+    static <T> Node<T> of(T value, Node<T> left, Node<T> right) {
         return new Node<>(value, left, right);
     }
 
-    public static <T> Node<T> of(T value) {
+    static <T> Node<T> of(T value) {
         return new Node<>(value, null, null);
     }
 
-    public static <T> Node<T> left(T value, Node<T> left) {
+    static <T> Node<T> left(T value, Node<T> left) {
         return new Node<>(value, left, null);
     }
 
-    public static <T> Node<T> right(T value, Node<T> right) {
+    static <T> Node<T> right(T value, Node<T> right) {
         return new Node<>(value, null, right);
     }
 
@@ -36,7 +38,7 @@ public record Node<T>(T value, Node<T> left, Node<T> right) {
         traverse(node.right(), fn);
     }
 
-    public void traverse(Consumer<T> fn) {
+    void traverse(Consumer<T> fn) {
         Node.traverse(this, fn);
     }
 }
