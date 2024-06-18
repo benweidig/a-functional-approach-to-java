@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 13 - Asynchronous Tasks
- *
- * Example 13-7. Refactored implementation of Futures with eachOf and bestEffort
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 13 - Asynchronous Tasks
+//
+// Example 13-7. Refactored implementation of Futures with eachOf and bestEffort
+//
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public final class CompletableFuturesRefactored {
+public final class CompletableFutures {
 
     private final static Predicate<CompletableFuture<?>> EXCEPTIONALLY =
         Predicate.not(CompletableFuture::isCompletedExceptionally);
@@ -19,7 +19,7 @@ public final class CompletableFuturesRefactored {
     private static <T> Function<Void, List<T>> gatherResultsFn(CompletableFuture<T>... cfs) {
 
         return unused -> Arrays.stream(cfs)
-                               .filter(Predicate.not(CompletableFuturesRefactored.EXCEPTIONALLY))
+                               .filter(Predicate.not(CompletableFutures.EXCEPTIONALLY))
                                .map(CompletableFuture::join)
                                .toList();
     }
@@ -35,7 +35,7 @@ public final class CompletableFuturesRefactored {
                                 .thenApply(gatherResultsFn(cfs));
     }
 
-    private CompletableFuturesRefactored() {
+    private CompletableFutures() {
         // SUPPRESS DEFAULT CONSTRUCTOR
     }
 }

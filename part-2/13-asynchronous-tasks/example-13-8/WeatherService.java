@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 13 - Asynchronous Tasks
- *
- * Example 13-8. Cached WeatherService with CompletableFuture
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 13 - Asynchronous Tasks
+//
+// Example 13-8. Cached WeatherService with CompletableFuture
+//
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,10 +11,10 @@ import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 
-record WeatherInfo(int zipCode) {
-}
 
 public class WeatherService {
+
+    record WeatherInfo(int zipCode) { }
 
     private final Map<Integer, WeatherInfo> cache = new HashMap<>();
 

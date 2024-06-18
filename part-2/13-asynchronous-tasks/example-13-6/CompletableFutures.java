@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 13 - Asynchronous Tasks
- *
- * Example 13-6. Complete implementation of eachOf
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 13 - Asynchronous Tasks
+//
+// Example 13-6. Complete implementation of eachOf
+//
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,16 +11,16 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class CompletableFuturesEach {
+public class CompletableFutures {
 
-    private final static Predicate<CompletableFuture<?>> EXCEPTIONALLY =
+    private static final Predicate<CompletableFuture<?>> EXCEPTIONALLY =
         Predicate.not(CompletableFuture::isCompletedExceptionally);
 
     public static <T> CompletableFuture<List<T>> eachOf(CompletableFuture<T>... cfs) {
 
         Function<Void, List<T>> fn =
             unused -> Arrays.stream(cfs)
-                            .filter(Predicate.not(CompletableFuturesEachOf.EXCEPTIONALLY))
+                            .filter(Predicate.not(CompletableFutures.EXCEPTIONALLY))
                             .map(CompletableFuture::join)
                             .toList();
 
@@ -31,7 +31,7 @@ public class CompletableFuturesEach {
 
         Function<Void, List<T>> fn =
             unused -> Arrays.stream(cfs)
-                            .filter(Predicate.not(CompletableFuturesEachOf.EXCEPTIONALLY))
+                            .filter(Predicate.not(CompletableFutures.EXCEPTIONALLY))
                             .map(CompletableFuture::join)
                             .toList();
 
@@ -40,7 +40,7 @@ public class CompletableFuturesEach {
                                 .thenApply(fn);
     }
 
-    private CompletableFuturesEachOf() {
+    private CompletableFutures() {
         // SUPPRESS DEFAULT CONSTRUCTOR
     }
 }

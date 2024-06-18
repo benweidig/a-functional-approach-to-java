@@ -1,11 +1,14 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 13 - Asynchronous Tasks
- *
- * Example 13-2. CompletableFuture creation with convenience methods
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 13 - Asynchronous Tasks
+//
+// Example 13-4. Unwrapping nested stages
+//
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
 CompletableFuture<Integer> future1 = CompletableFuture.supplyAsync(() -> 42);
 CompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 23);

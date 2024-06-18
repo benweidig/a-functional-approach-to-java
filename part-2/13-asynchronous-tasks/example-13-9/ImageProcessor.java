@@ -1,9 +1,10 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 13 - Asynchronous Tasks
- *
- * Example 13-9. ImageProcessor with unsettled CompletableFuture
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 13 - Asynchronous Tasks
+//
+// Example 13-9. ImageProcessor with unsettled CompletableFuture
+// THIS EXAMPLE IS INCOMPLETE AND FOR ILLUSTRATION PURPOSES ONLY
+//
 
 import java.util.concurrent.CompletableFuture;
 
