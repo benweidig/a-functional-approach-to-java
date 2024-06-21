@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- *
- * Example 10-9. Minimal Try<T, R> accepting a lambda and Exception handler
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
+// Example 10-9. Minimal Try<T, R> accepting a lambda and Exception handler
+//
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,7 +13,7 @@ import java.util.function.Function;
 public class TryMinimal {
 
     @FunctionalInterface
-    public interface ThrowingFunction<T, U> extends Function<T, U> {
+    interface ThrowingFunction<T, U> extends Function<T, U> {
 
         U applyThrows(T elem) throws Exception;
 
@@ -26,17 +26,17 @@ public class TryMinimal {
             }
         }
 
-        public static <T, U> Function<T, U> uncheck(ThrowingFunction<T, U> fn) {
+        static <T, U> Function<T, U> uncheck(ThrowingFunction<T, U> fn) {
             return fn::apply;
         }
     }
 
-    public static class Try<T, R> {
+    static class Try<T, R> {
 
         private final Function<T, R>                fn;
         private final Function<RuntimeException, R> failureFn;
 
-        public static <T, R> Try<T, R> of(ThrowingFunction<T, R> fn) {
+        static <T, R> Try<T, R> of(ThrowingFunction<T, R> fn) {
             Objects.requireNonNull(fn);
 
             return new Try<>(fn, null);

@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- *
- * Example 10-5. Traditional Result Object
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
+// Example 10-5. Traditional Result Object
+//
 
 public record Result<V, E extends Throwable> (V value,
                                               E throwable,

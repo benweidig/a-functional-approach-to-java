@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- *
- * Example 10-8. Scala’s Try/Success/Failure pattern
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
+// Example 10-8. Scala’s Try/Success/Failure pattern
+//
 
 import java.nio.file.Path
 import scala.util.{Failure, Success, Try}

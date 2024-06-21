@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- *
- * Example 10-4. Using Optional<String> instead of throwing an IOException
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
+// Example 10-4. Using Optional<String> instead of throwing an IOException
+//
 
 import java.nio.file.Files;
 import java.nio.file.Path;

@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- *
- * Example 10-2. Unchecking java.util.Function
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
+// Example 10-2. Unchecking java.util.Function
+//
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -24,7 +24,8 @@ public class UncheckingExceptions {
         default U apply(T t) {
             try {
                 return applyThrows(t);
-            } catch (Exception e) {
+            }
+            catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }
@@ -37,17 +38,19 @@ public class UncheckingExceptions {
     static String safeReadString(Path path) {
         try {
             return Files.readString(path);
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             return null;
         }
-      }
+    }
 
-      public static void main(String... args) {
-          var result = Stream.of(Paths.get("../jshell/try-catch.java"), Paths.get("../jshell/files-readstring.java"))
-                             .map(UncheckingExceptions::safeReadString)
-                             .filter(Objects::nonNull)
-                             .toList();
+    public static void main(String... args) {
+        var result = Stream.of(Paths.get("UncheckingExceptions.java"),
+                               Paths.get("unchecking-exceptions.java"))
+                           .map(UncheckingExceptions::safeReadString)
+                           .filter(Objects::nonNull)
+                           .count();
 
-          System.out.println("Found: " + result.size());
+        System.out.println("Found: " + result);
     }
 }

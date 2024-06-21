@@ -1,12 +1,12 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.files.Paths;
+import java.nio.file.Paths;
 import java.math.BigDecimal;
 
 // ---------------------------------------------------------------------

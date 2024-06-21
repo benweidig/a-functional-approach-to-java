@@ -1,9 +1,9 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 10 - Functional Exception Handling
- *
- * Example 10-6. Using Result<V, E> as a return type
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 10 - Functional Exception Handling
+//
+// Example 10-6. Using Result<V, E> as a return type
+//
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,13 +13,13 @@ import java.util.stream.Stream;
 
 public class ResultAsReturnType {
 
-    public record Result<V, E extends Throwable> (V value, E throwable, boolean isSuccess) {
+    record Result<V, E extends Throwable> (V value, E throwable, boolean isSuccess) {
 
-        public static <V, E extends Throwable> Result<V, E> success(V value) {
+        static <V, E extends Throwable> Result<V, E> success(V value) {
             return new Result<>(value, null, true);
         }
 
-        public static <V, E extends Throwable> Result<V, E> failure(E throwable) {
+        static <V, E extends Throwable> Result<V, E> failure(E throwable) {
             return new Result<>(null, throwable, false);
         }
     }
@@ -34,13 +34,13 @@ public class ResultAsReturnType {
     }
 
     public static void main(String... args) {
-        var result = Stream.of(Paths.get("../jshell/try-catch.java"),
+        var result = Stream.of(Paths.get("ResultAsReturnType.java"),
                                Paths.get("invalid"),
-                               Paths.get("../jshell/files-readstring.java"))
+                               Paths.get("reasult-as-return-type.java"))
                            .map(ResultAsReturnType::safeReadString)
                            .filter(Result::isSuccess)
-                           .toList();
+                           .count();
 
-        System.out.println("Found: " + result.size());
+        System.out.println("Found: " + result);
     }
 }
