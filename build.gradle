@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+ext.addExample = { subproject, location, name, exampleMainClass, taskDescription ->
+    sourceSets.create(name) {
+        java.srcDirs = ["${subproject.projectDir}/${location}"]
+    }
+
+    subproject.tasks.create(name: name, type: JavaExec) {
+        group = subproject.exampleGroup
+        description = taskDescription
+        mainClass = exampleMainClass
+        classpath = sourceSets[name].runtimeClasspath
+    }
+}
+
+subprojects {
+    afterEvaluate { subproject ->
+        subproject.examples.each { location, examples ->
+            examples.each { mainClass, description ->
+                def exampleName = examples.size() > 1 ? "${location}-${mainClass}" : location
+                addExample(subproject, location, exampleName, mainClass, description)
+            }
+        }
+    }
+}

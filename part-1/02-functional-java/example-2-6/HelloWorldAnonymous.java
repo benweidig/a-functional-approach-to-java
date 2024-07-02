@@ -17,5 +17,8 @@ public class HelloWorldAnonymous {
                 return "hello, " + name + "!";
             }
         };
+
+        var greeting = helloWorld.sayHello("Ben");
+        System.out.println(greeting);
     }
 }

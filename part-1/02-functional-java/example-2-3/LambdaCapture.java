@@ -20,5 +20,5 @@ public class LambdaCapture {
             () -> System.out.println("the answer is " + theAnswer);
 
         return printAnswer;
-   }
+    }
 }

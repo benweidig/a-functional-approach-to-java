@@ -1,0 +1,6 @@
+
+include ':02-functional-java'
+project(':02-functional-java').projectDir = file('part-1/02-functional-java')
+
+include ':03-functional-jdk'
+project(':03-functional-jdk').projectDir = file('part-1/03-functional-jdk')

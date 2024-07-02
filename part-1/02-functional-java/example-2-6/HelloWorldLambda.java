@@ -11,5 +11,8 @@ public class HelloWorldLambda {
     public static void main(String... args) {
 
         HelloWorld helloWorld = name -> "hello, " + name + "!";
+
+        var greeting = helloWorld.sayHello("Ben");
+        System.out.println(greeting);
     }
 }

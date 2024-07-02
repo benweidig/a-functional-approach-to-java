@@ -1,0 +1,24 @@
+group 'com.beliefdrivendesign.afatj.chapter2'
+
+ext.exampleGroup = "Part 1 - Chapter 2 : Functional Java"
+
+ext.examples = [
+    'example-2-1': ['LambdaVariants': 'Different ways of writing the same lambda'],
+    'example-2-3': ['LambdaCapture': 'Lambda variable capture'],
+    'example-2-4': ['ReassignFinalVariable': 'Change data behind a final variable'],
+    'example-2-5': ['RefinalizeReference': 'Re-finalize a variable'],
+    'example-2-6': [
+        'HelloWorldAnonymous': 'Anonymous class versus lambda expression',
+        'HelloWorldLambda': 'Anonymous class versus lambda expression',
+    ],
+    'example-2-8': ['MethodReferencesAndStreams': 'Method references and Streams'],
+    'example-2-9': ['Memoization': 'Memoization with Map#computeIfAbsent'],
+    'example-2-10': ['FirstClassCitizenship': 'First-class Java Lambdas'],
+    'method-references': [
+        'MethodReferencesBoundNonStatic': 'Bound non-static method references',
+        'MethodReferencesBoundNonStaticThisSuper': 'Bound non-static method references (this/super)',
+        'MethodReferencesConstructor': 'Constructor references',
+        'MethodReferencesStatic': 'Static method references',
+        'MethodReferencesUnboundNonStatic': 'Unbound non-static method references',
+    ]
+]
