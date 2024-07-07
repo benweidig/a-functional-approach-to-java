@@ -1,6 +1,4 @@
-group 'com.beliefdrivendesign.afatj.chapter2'
-
-ext.exampleGroup = "Part 1 - Chapter 2 : Functional Java"
+ext.exampleGroup = "Part 1 - Chapter 2: Functional Java"
 
 ext.examples = [
     'example-2-1': ['LambdaVariants': 'Different ways of writing the same lambda'],

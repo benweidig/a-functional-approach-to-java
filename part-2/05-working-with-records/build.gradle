@@ -1,0 +1,31 @@
+ext.exampleGroup = "Part 2 - Chapter 5: Working with Records"
+
+ext.examples = [
+    'example-5-1': ['UserPOJO': 'Simple User POJO'],
+    'example-5-2': ['UserImmutable': 'Simple immutable User type'],
+    'example-5-4': ['Inheritance': 'Using interfaces with Records as templates'],
+    'record-features': [
+        'CanonicalConstructor': 'Explicit canonical constructor',
+        'CompactConstructor': 'Compact constructor',
+        'OverrideComponentAccessor': 'Overriding a component accessor',
+        'DerivedState': 'Deriving state',
+        'Generics': 'Generic Record'
+    ],
+    'missing-record-features': ['FactoryMethods': 'Record factory methods'],
+    'record-use-cases-common-practices': [
+        'BuilderPatternCopy': 'Adding a copy method (builder pattern)',
+        'DataScrubbing': 'Scrubbing/normalizing data',
+        'IncreaseImmutability': 'Increasing mutability of components',
+        'Validation': 'Validating components'
+    ],
+    'record-wither': [
+        'Wither': 'Wither helper methods',
+        'WitherNested': 'Nested Wither helper methods'
+    ],
+    'record-optional-data-handling': [
+        'ConvenienceConstructor': 'Adding convenience constructors',
+        'NonNullContainer': 'Making sure container type is non-null'
+    ],
+    'example-5-10': ['SealedGroups': 'Group membership as sealed types instead of Optional<String>'],
+    'example-5-11': ['SealedGroups': 'User Record with sealed interface Membership']
+]

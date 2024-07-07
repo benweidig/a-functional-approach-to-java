@@ -13,7 +13,7 @@ public final class UserPOJO {
     private boolean       active;
     private LocalDateTime lastLogin;
 
-    public User() { }
+    public UserPOJO() { }
 
     public UserPOJO(String username,
                     boolean active,
@@ -78,5 +78,14 @@ public final class UserPOJO {
                                   .append(this.lastLogin)
                                   .append("]")
                                   .toString();
+    }
+
+    public static void main(String... args) {
+
+        var user = new UserPOJO();
+        user.setUsername("ben");
+        user.setActive(true);
+
+        System.out.println(user);
     }
 }

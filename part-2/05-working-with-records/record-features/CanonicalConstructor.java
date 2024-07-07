@@ -5,19 +5,32 @@ import java.util.Objects;
  * A FUNCTIONAL APPROACH TO JAVA
  * Chapter 5 - Working with Records
  */
-public record CanonicalConstructor(String username,
-                                   boolean active,
-                                   LocalDateTime lastLogin) {
+public class CanonicalConstructor {
 
-    public CanonicalConstructor(String username,
-                                boolean active,
-                                LocalDateTime lastLogin) {
-    
-        Objects.requireNonNull(username);
-        Objects.requireNonNull(lastLogin);
+    record User(String username,
+                boolean active,
+                LocalDateTime lastLogin) {
 
-        this.username = username;
-        this.active = active;
-        this.lastLogin = lastLogin;
+        public User(String username,
+                    boolean active,
+                    LocalDateTime lastLogin) {
+        
+            Objects.requireNonNull(username);
+            Objects.requireNonNull(lastLogin);
+
+            this.username = username.toLowerCase();
+            this.active = active;
+            this.lastLogin = lastLogin;
+        }
+    }
+
+    public static void main(String... args) {
+
+        var user = new User("BEN", true, LocalDateTime.now());
+
+        System.out.println(user);
+
+        var throwingUser = new User(null, true, LocalDateTime.now());
+
     }
 }

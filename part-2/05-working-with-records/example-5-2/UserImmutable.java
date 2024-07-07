@@ -67,4 +67,12 @@ public final class UserImmutable {
                                   .append("]")
                                   .toString();
     }
+
+
+    public static void main(String... args) {
+
+        var user = new UserImmutable("ben", true, null);
+
+        System.out.println(user);
+    }
 }

@@ -1,4 +1,4 @@
-ext.exampleGroup = "Part 1 - Chapter 3 : Functional JDK"
+ext.exampleGroup = "Part 1 - Chapter 3: Functional JDK"
 
 ext.examples = [
     'example-3-1': ['ArityCompatibility': 'Java arity compatibility'],

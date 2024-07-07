@@ -23,7 +23,6 @@ public class OverrideComponentAccessor {
 
         var user = new User(null, true, LocalDateTime.now());
 
-        var username = user.username();
-        System.out.println(username);
+        System.out.println("Username via accessor: " + user.username());
     }
 }

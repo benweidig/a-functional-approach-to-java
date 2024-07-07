@@ -31,6 +31,6 @@ public class FactoryMethods {
         var rectangle2 = Rectangle.atY(123, 300, 400);
 
         var isEqual = rectangle1.equals(rectangle2);
-        System.out.println(isEqual);
+        System.out.println("Rectangles equal? " + isEqual);
     }
 }

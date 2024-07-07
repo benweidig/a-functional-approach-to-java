@@ -21,6 +21,6 @@ public class DerivedState {
                                      true,
                                      null);
 
-        System.out.println(neverLoggedIn.hasLoggedInAtLeastOnce());
+        System.out.println("Logged in before: " + neverLoggedIn.hasLoggedInAtLeastOnce());
     }
 }

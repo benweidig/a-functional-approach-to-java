@@ -43,24 +43,24 @@ Collection of examples of different Record features.
 
 Collection of examples of features that Records are lacking.
 
-[Missing Features](missing-features)
+[Missing Features](missing-record-features)
 
 
 ## Use-Cases and Common Practices
 
 Examples of Record Use-Cases and Common Practices.
 
-[Use-Cases and Common Practices](use-cases-common-practices)
+[Use-Cases and Common Practices](record-use-cases-common-practices)
 
 ### Creating Modified Copies
 
-[Creating Modified Copies (wither)](wither)
+[Creating Modified Copies (wither)](record-wither)
 
 ### Better Optional Data Handling
 
 How to handle optional components.
 
-[Better Optional Data Handling](better-optional-data-handling)
+[Better Optional Data Handling](record-optional-data-handling)
 
 ### Serializing Evolving Records
 
