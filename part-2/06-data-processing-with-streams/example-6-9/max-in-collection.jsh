@@ -5,8 +5,8 @@
 // Example 6-9. Finding the max number of a collection
 //
 
-import java.util.Collection;
-import java.util.List;
+import java.util.Collection
+import java.util.List
 
 Integer max(Collection<Integer> numbers) {
     int result = Integer.MIN_VALUE;
@@ -19,6 +19,8 @@ Integer max(Collection<Integer> numbers) {
 }
 
 
-var numbers = List.of(3, 1_234, 999, 42, -23, 0);
+var numbers = List.of(3, 1_234, 999, 42, -23, 0)
 
-max(numbers);
+var result = max(numbers)
+
+System.out.println("Max number: " + result)

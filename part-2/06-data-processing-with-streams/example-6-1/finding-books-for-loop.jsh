@@ -57,3 +57,5 @@ for (var book : books) {
         break;
     }
 }
+
+System.out.println("Found books: " + result)

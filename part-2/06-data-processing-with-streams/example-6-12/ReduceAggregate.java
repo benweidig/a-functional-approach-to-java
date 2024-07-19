@@ -28,6 +28,6 @@ public class ReduceAggregate {
                                       return list;
                                    });
 
-        System.out.println(fruits);
+        System.out.println("aggregated = " + fruits);
     }
 }

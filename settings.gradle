@@ -1,12 +1,12 @@
+def includeProject(part, folder) {
+    def projectName = ":${folder}"
+    include projectName
+    project(projectName).projectDir = file("part-${part}/${folder}")
+}
 
-include ':02-functional-java'
-project(':02-functional-java').projectDir = file('part-1/02-functional-java')
+includeProject(1, '02-functional-java')
+includeProject(1, '03-functional-jdk')
 
-include ':03-functional-jdk'
-project(':03-functional-jdk').projectDir = file('part-1/03-functional-jdk')
-
-include ':04-immutability'
-project(':04-immutability').projectDir = file('part-2/04-immutability')
-
-include ':05-working-with-records'
-project(':05-working-with-records').projectDir = file('part-2/05-working-with-records')
+includeProject(2, '04-immutability')
+includeProject(2, '05-working-with-records')
+includeProject(2, '06-data-processing-with-streams')

@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -60,6 +59,6 @@ public class FindingBooksForLoop {
             }
         }
 
-        System.out.println (result);
+        System.out.println("Found books: " + result);
     }
 }

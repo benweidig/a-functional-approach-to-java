@@ -36,6 +36,6 @@ public class ReduceLikeForLoop {
 
         var result = max(numbers);
 
-        System.out.println(result);
+        System.out.println("max number = " + result);
     }
 }

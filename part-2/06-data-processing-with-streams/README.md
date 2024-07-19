@@ -123,4 +123,4 @@ Cost-optimized Stream pipeline to process fruits.
 
 How operations might get dropped if they aren't relevant to the result.
 
-[Short-Circuiting Operations](short-circuiting)
+[Short-Circuiting Operations](short-circuit)

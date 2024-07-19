@@ -40,3 +40,4 @@ List<String> result = books.stream()
                            .limit(3)
                            .collect(Collectors.toList());
 
+System.out.println("Found books: " + result)

@@ -1,0 +1,20 @@
+ext.exampleGroup = 'Part 2 - Chapter 6: Data Processing with Streams'
+
+ext.examples = [
+    'example-6-1': ['FindingBooksForLoop': 'Finding books with a for-loop'],
+    'example-6-2': ['FindingBooksStream': 'Finding books with Streams'],
+    'example-6-7': ['FlatMapMapMulti': 'Shape flatMap versus mapMulti'],
+    'example-6-8': ['Peek': 'Peeking into a Stream'],
+    'example-6-9': ['MaxInCollection': 'Finding the max number of a collection'],
+    'example-6-10': ['ReduceLikeForLoop': 'Reduce-like for-loop'],
+    'example-6-11': ['ReduceVsMapReduce': 'Three-arguments reduce() versus map + two-arguments reduce'],
+    'example-6-12': ['ReduceAggregate': 'Aggregate elements with the reduce operation'],
+    'example-6-13': ['ReduceImmutableAggregation': 'Immutable accumulation of numbers with a Stream'],
+    'example-6-14': ['ReduceVsCollect': 'Concatenating String elements with reduce and collect'],
+    'example-6-15': ['FruitsNaive': 'Fruit pipeline (naïve)'],
+    'example-6-16': ['FruitsImproved': 'Fruit pipeline (improved)'],
+    'short-circuit': [
+        'Dropped': 'Map operation gets dropped',
+        'NotDropped': 'Map operation is not dropped'
+    ]
+]

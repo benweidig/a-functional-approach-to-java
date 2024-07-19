@@ -42,6 +42,6 @@ public class FindingBooksStream {
                                    .limit(3)
                                    .collect(Collectors.toList());
 
-        System.out.println(result);
+        System.out.println("Found books: " + result);
     }
 }

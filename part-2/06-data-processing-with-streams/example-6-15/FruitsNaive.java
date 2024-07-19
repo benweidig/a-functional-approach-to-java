@@ -7,13 +7,13 @@
 
 import java.util.stream.Stream;
 
-public class FruitsImproved {
+public class FruitsNaive {
 
-      public static void main(String args) {
+      public static void main(String... args) {
             Stream.of("ananas", "oranges", "apple", "pear", "banana")
-                  .filter(s -> s.startsWith("a"))
                   .map(String::toUpperCase)
                   .sorted()
+                  .filter(s -> s.startsWith("A"))
                   .forEach(System.out::println);
       }
 }

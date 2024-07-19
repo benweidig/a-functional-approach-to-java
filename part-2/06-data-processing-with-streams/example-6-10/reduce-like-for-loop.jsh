@@ -5,9 +5,9 @@
 // Example 6-10. Reduce-like for-loop
 //
 
-import java.util.Collection;
-import java.util.List;
-import java.util.function.BinaryOperator;
+import java.util.Collection
+import java.util.List
+import java.util.function.BinaryOperator
 
 <T> T reduce(Collection<T> elements,
              T initialValue,
@@ -28,6 +28,9 @@ Integer max(Collection<Integer> numbers) {
                   Math::max);
 }
 
-var numbers = List.of(3, 1_234, 999, 42, -23, 0);
+var numbers = List.of(3, 1_234, 999, 42, -23, 0)
 
-max(numbers);
+var result = max(numbers)
+
+System.out.println("max number = " + result)
+

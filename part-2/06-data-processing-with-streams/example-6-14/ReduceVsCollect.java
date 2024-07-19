@@ -21,7 +21,7 @@ public class ReduceVsCollect {
         var reduced = strings.stream()
                              .reduce("", String::concat);
 
-        System.out.println("reduced: " + reduced);
+        System.out.println("reduced = " + reduced);
 
         // STREAM COLLECT - CUSTOM
         
@@ -31,13 +31,13 @@ public class ReduceVsCollect {
                                                   StringJoiner::merge,
                                                   StringJoiner::toString));
         
-        System.out.println("joiner: " + joiner);
+        System.out.println("joiner = " + joiner);
 
         // STREAM COLLECT - PRE-DEFINED
         
         var collectWithCollectors = strings.stream()
                                            .collect(Collectors.joining());
 
-        System.out.println("collectWithCollectors: " + collectWithCollectors);
+        System.out.println("collectWithCollectors = " + collectWithCollectors);
     }
 }

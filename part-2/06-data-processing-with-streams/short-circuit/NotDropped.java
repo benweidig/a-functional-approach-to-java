@@ -5,18 +5,20 @@
 
 import java.util.stream.Stream;
 
-public class ShortCircuitingDropped {
+public class NotDropped {
 
-   public static void main(String... args) {
+    public static void main(String... args) {
+
         var result = Stream.of("apple", "orange", "banana", "melon")
+                           .filter(str -> str.contains("e"))
                            .peek(str -> System.out.println("peek 1: " + str))
                            .map(str -> {
                                System.out.println("map: " + str);
                                return str.toUpperCase();
-                            })
-                            .peek(str -> System.out.println("peek 2: " + str))
-                            .count();
+                           })
+                           .peek(str -> System.out.println("peek 2: " + str))
+                           .count();
 
-        System.out.println(result);
+        System.out.println("count = " + result);
     }
 }
