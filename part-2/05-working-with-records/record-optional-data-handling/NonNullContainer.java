@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 import java.util.Objects;
 import java.util.Optional;
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
 public class NonNullContainer {
 
     record User(String username,

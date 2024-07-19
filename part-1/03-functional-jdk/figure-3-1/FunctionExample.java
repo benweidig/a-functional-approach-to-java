@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Figure 3-1. java.util.function.Function<T,R>
+//
+
 import java.util.function.Function;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- * 
- * Figure 3-1. java.util.function.Function<T,R>
- */
 public class FunctionExample {
 
     public static void main(String[] args) {
@@ -14,6 +15,6 @@ public class FunctionExample {
 
         var result = stringLength.apply("Hello, Function!");
 
-        System.out.println(result);
+        System.out.println("length = " + result);
     }
 }

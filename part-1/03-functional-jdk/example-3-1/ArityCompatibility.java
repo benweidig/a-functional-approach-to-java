@@ -1,12 +1,13 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Example 3-1. Java arity compatibility
+//
+
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- *
- * Example 3-1. Java arity compatibility
- */
 public class ArityCompatibility {
 
     public static void main(String[] args) {
@@ -22,11 +23,11 @@ public class ArityCompatibility {
         // THIS CALL WON'T COMPILE
         acceptsUnary(func);
 
-        /*
-         * COMPILER ERROR:
-         * The method acceptsUnary(UnaryOperator<String>) in the type ArityCompatibility is
-         * not applicable for the arguments (Function<String,String>)
-         */
+        //
+        // COMPILER ERROR:
+        // The method acceptsUnary(UnaryOperator<String>) in the type ArityCompatibility is
+        // not applicable for the arguments (Function<String,String>)
+        //
     }
 
     private static void acceptsUnary(UnaryOperator<String> unaryOp) {

@@ -1,15 +1,16 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Example 3-5. Functional compositor
+//
+
 import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- *
- * Example 3-5. Functional compositor
- */
 public final class Compositor {
 
     public static <T, R> Supplier<R> compose(Supplier<T> before, Function<T, R> fn) {

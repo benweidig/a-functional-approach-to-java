@@ -1,12 +1,13 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+// Example 5-8. Neste builder
+//
+//
+
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- *
- * Example 5-8. Neste builder
- *
- */
 public record User(String username, boolean active, LocalDateTime lastLogin) {
 
     // NO BODY

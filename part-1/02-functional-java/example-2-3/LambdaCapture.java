@@ -1,9 +1,10 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Example 2-3. Lambda variable capture
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+// 
+// Example 2-3. Lambda variable capture
+//
+
 public class LambdaCapture {
 
     public static void main(String... args) {

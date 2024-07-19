@@ -1,11 +1,13 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-1. Different ways of writing the same lambda
+//
+
 import java.util.function.Predicate;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- *
- * Example 2-1. Different ways of writing the same lambda
- */
+
 public class LambdaVariants {
 
     public static void main(String... args) {

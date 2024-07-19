@@ -1,14 +1,15 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+// 
+// Example 5-9. Straem pipeline with localized Record
+//
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- * 
- * Example 5-9. Straem pipeline with localized Record
- */
 public class LocalNominalTuple {
 
     private static final Map<Integer, List<String>> ALBUMS =
@@ -51,6 +52,8 @@ public class LocalNominalTuple {
     }
 
     public static void main(String[] args) {
-        filterAlbums(ALBUMS, 1995);
+
+        var result = filterAlbums(ALBUMS, 1995);
+        System.out.println("filtered = " + result);
     }
 }

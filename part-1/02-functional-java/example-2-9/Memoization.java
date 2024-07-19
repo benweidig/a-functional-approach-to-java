@@ -1,13 +1,14 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-9. Memoization with Map#computeIfAbsent
+//
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- *
- * Example 2-9. Memoization with Map#computeIfAbsent
- */
 public class Memoization {
 
     private static final Map<String, Object> CACHE = new HashMap<>();
@@ -36,7 +37,12 @@ public class Memoization {
 
     public static void main(String[] args) {
 
+        System.out.println("before first call");
         var calculated = memoizedCall("hello, world!", 42);
+        System.out.println("after first call");
+        
+        System.out.println("before second call");
         var memoized = memoizedCall("hello, world!", 42);
+        System.out.println("after second call");
     }
 }

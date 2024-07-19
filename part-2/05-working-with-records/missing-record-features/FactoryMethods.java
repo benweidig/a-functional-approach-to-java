@@ -1,7 +1,8 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 public class FactoryMethods {
 
     record Origin(int x, int y) {
@@ -31,6 +32,6 @@ public class FactoryMethods {
         var rectangle2 = Rectangle.atY(123, 300, 400);
 
         var isEqual = rectangle1.equals(rectangle2);
-        System.out.println("Rectangles equal? " + isEqual);
+        System.out.println("rect1 eq rect2 = " + isEqual);
     }
 }

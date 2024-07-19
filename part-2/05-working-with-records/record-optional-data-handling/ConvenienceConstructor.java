@@ -1,10 +1,11 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 import java.util.Optional;
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
 public class ConvenienceConstructor {
 
     record User(String username,
@@ -35,11 +36,9 @@ public class ConvenienceConstructor {
     public static void main(String... args) {
 
         var userWithGroup = new User("ben", true, "admin", LocalDateTime.now());
-
         System.out.println("With group: " + userWithGroup);
 
         var userWithoutGroup = new User("jane", true, LocalDateTime.now());
-
         System.out.println("Without group: " + userWithoutGroup);
     }
 }

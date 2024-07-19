@@ -1,7 +1,8 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 public class BuilderPatternCopy {
 
     record Point(int x, int y) {
@@ -35,11 +36,12 @@ public class BuilderPatternCopy {
     public static void main(String... args) {
 
         var original = new Point(23, 42);
+        System.out.println("original = " + original);
 
         var updated = new Point.Builder(original)
-                .x(5)
-                .build();
+                               .x(5)
+                               .build();
 
-                System.out.println(updated);
+        System.out.println("updated = " + updated);
     }
 }

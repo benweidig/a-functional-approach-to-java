@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+// Example 5-11. User Record with sealed interface Membership
+//
+
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- *
- * Example 5-11. User Record with sealed interface Membership
- */
 public class SealedGroups {
 
     sealed interface Membership permits Group, NoGroup {
@@ -41,6 +42,6 @@ public class SealedGroups {
 
         User user = new User("ben", true, new Group("admin"), LocalDateTime.now());
 
-        System.out.println(user);
+        System.out.println("user = " + user);
     }
 }

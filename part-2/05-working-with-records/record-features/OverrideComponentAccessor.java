@@ -1,9 +1,9 @@
-import java.time.LocalDateTime;
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
+import java.time.LocalDateTime;
 
 public class OverrideComponentAccessor {
 
@@ -23,6 +23,6 @@ public class OverrideComponentAccessor {
 
         var user = new User(null, true, LocalDateTime.now());
 
-        System.out.println("Username via accessor: " + user.username());
+        System.out.println("username via accessor =  " + user.username());
     }
 }

@@ -1,12 +1,14 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working With Records
+//
+// Example 5-1. Simple User POJO
+//
+
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working With Records
- *
- * Example 5-1. Simple User POJO
- */
 public final class UserPOJO {
 
     private String        username;

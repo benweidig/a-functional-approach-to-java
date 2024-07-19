@@ -13,35 +13,55 @@ Each explicit example has its own directory containing code, usually Java and JS
 
 The actual implementation of the examples might differ from their counterparts in the book to make them easier to use.
 
-Many of them highlight how code syntax is used, and don't represent a full-fledged example with actual output.
+Many examples are supposed to highlight how a specific code syntax is used and don't represent a full-fledged example with actual output.
+Especially JShell scripts don't have explicit output, but the results are printed anyway.
+
 Nevertheless, the examples should be helpful as a starting point to experiment.
+
+### Java/Gradle
+
+To not require a myriad of intermediate folders (`src/main/java` etc.), the examples are plain files with an adapted classpath.
+This way, you can start sill start examples with Gradle.
+
+All examples are grouped by chapters, see:
+
+```shell
+./gradlew tasks
+```
+
+The task name for each example is unique, and can be run without requiring the subproject:
+
+```shell
+# Actually runs :02-functional-java:example-2-9
+./gradlew example-2-9
+```
 
 
 ### JShell
 
 Examples with lowercase-dash-separated names are JShell-compatible files.
-They have the `.java` extension to support _a little_ code highlighting.
+They have the `.jsh` extension so they do not clash with the `.java` files for Gradle.
 
-The examples from the book can mostly be run directly in [JShell](https://belief-driven-design.com/jshell-the-java-repl-82d804e6cbf/) by either running `jshell` and pasting the code into it or using a redirect, e.g., `jshell < file.java` instead.
+The examples from the book can mostly be run directly in [JShell](https://belief-driven-design.com/jshell-the-java-repl-82d804e6cbf/):
+
+
+```shell
+jshell part-2/06-data-processing-with-streams/example-6-15/fruits-naive.jsh
+
+# or
+
+cd part-2/06-data-processing-with-streams/example-6-15/
+jshell fruits-naive.jsh
+```
 
 Some code, however, demonstrates invalid code, throws Exceptions, or won't compile at all.
 Other examples won't compile due to parsing rules of new lines.
 I've tried to mark such examples with a comment in the header.
 
 
-### Java
+### Chapter 14: Design Patterns
 
-Since Java 11, you don't need to compile the file beforehand, e.g., `javac ExampleFile.java` and then `java ExampleFile`.
-Instead, `java ExampleFile.java` compiles and runs it in a single step.
-
-
-### Additional Files and Folders
-
-There might be additional folders in each chapter's directory, like `other` or grouped examples.
-
-### Gradle
-
-[Chapter 14](./part-2/14-design-patterns/) is a Gradle-project with dedicated tasks for each example.
+[Chapter 14](./part-2/14-design-patterns/) is a dedicated Gradle-project with tasks for each example.
 See its [`README.md`](./part-2/14-design-patterns/README.md) for more info.
 
 

@@ -1,12 +1,13 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Why So Many Functional Interface Variants?
+// > Bridging Functional Interfaces
+//
+
 import java.util.function.Predicate;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- *
- * Why So Many Functional Interface Variants?
- * > Bridging Functional Interfaces
- */
 public class BridgingFunctionalInterfaces {
 
     interface LikePredicate<T> {

@@ -1,13 +1,13 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 4 - Immutabilty
+//
+// The State of Java Immtuability
+// > Immutable Collections
+//
+
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 4 - Immutabilty
- *
- * The State of Java Immtuability
- * > Immutable Collections
- */
 public class ImmutableCopy {
 
     public static void main(String[] args) {
@@ -24,8 +24,8 @@ public class ImmutableCopy {
         original.add("green");
 
         // CHECK CONTENT
-        System.out.println(original);
+        System.out.println("original = " + original);
 
-        System.out.println(copiedList);
+        System.out.println("copy = " + copiedList);
     }
 }

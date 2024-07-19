@@ -2,8 +2,8 @@ ext.exampleGroup = "Part 2 - Chapter 4: Functional JDK"
 
 ext.examples = [
     'unmodifiable-collections': [
-        'UnmodifiableListException': 'Unmodifiable List Exception',
-        'UnmodifiableListModifyOriginal': 'Modify Original'
+        'ExceptionThrown': 'Unmodifiable List Exception',
+        'ModifyOriginal': 'Modify Original'
     ],
     'example-4-1': ['CollectionsFinalReferences': 'Collections final references'],
 ]

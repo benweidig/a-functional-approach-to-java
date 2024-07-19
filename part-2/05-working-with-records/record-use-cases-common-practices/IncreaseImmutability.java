@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
 public class IncreaseImmutability {
 
     record Container(List<String> values) {

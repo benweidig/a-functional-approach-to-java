@@ -1,7 +1,8 @@
-/*
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 public class WitherNested {
 
     record Point(int x, int y) {
@@ -24,9 +25,10 @@ public class WitherNested {
 
     public static void main(String... args) {
 
-        var sourcePoint = new Point(23, 42);
-        var modifiedPoint = sourcePoint.with().x(5);
-
-        System.out.println(modifiedPoint);
-    }
+        var source = new Point(23, 42);
+        System.out.println("source = " + source);
+        
+        var modified = sourcePoint.with().x(5);
+        System.out.println("source = " + source);
+            }
 }

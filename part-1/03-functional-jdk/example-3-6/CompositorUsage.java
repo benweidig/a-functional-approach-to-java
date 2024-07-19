@@ -1,15 +1,16 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 3 - Functional JDK
+//
+// Example 3-6. Using the functional compositor
+//
+
 import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 3 - Functional JDK
- *
- * Example 3-6. Using the functional compositor
- */
 public class CompositorUsage {
 
     public static void main(String... args) {

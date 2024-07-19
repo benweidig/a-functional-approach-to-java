@@ -1,7 +1,8 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 public class Wither {
 
     record Point(int x, int y) {
@@ -17,9 +18,10 @@ public class Wither {
 
     public static void main(String... args) {
         
-        Point point = new Point(23, 42);
-        Point newPoint = point.withX(5);
-
-        System.out.println(newPoint);
+        Point source = new Point(23, 42);
+        System.out.println("source = " + source);
+        
+        Point modified = source.withX(5);
+        System.out.println("modified = " + modified);
     }
 }

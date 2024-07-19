@@ -1,9 +1,10 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- * 
- * Example 5-4. Using interfaces with Records as templates
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+// Example 5-4. Using interfaces with Records as templates
+//
+
 public class Inheritance {
 
     // SHARED INTERFACE DEFINING COMPONENTS

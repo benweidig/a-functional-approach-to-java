@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+// Example 5-10. Group membership as sealed types instead of Optional<String>
+//
+
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- *
- * Example 5-10. Group membership as sealed types instead of Optional<String>
- */
 public class SealedGroups {
 
     sealed interface Membership permits Group, NoGroup {
@@ -34,6 +35,6 @@ public class SealedGroups {
                              new Group("admin"),
                              LocalDateTime.now());
 
-        System.out.println(user);
+        System.out.println("user = " + user);
     }
 }

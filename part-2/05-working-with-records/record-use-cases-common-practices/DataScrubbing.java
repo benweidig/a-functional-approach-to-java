@@ -1,7 +1,8 @@
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 public class DataScrubbing {
 
     record Time(int minutes, int seconds) {
@@ -18,6 +19,6 @@ public class DataScrubbing {
     public static void main(String... args) {
 
         var time = new Time(12, 67);
-        System.out.println(time);
+        System.out.println("scrubbed = " + time);
     }
 }

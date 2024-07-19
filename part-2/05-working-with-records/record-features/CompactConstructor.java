@@ -1,10 +1,11 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
 public class CompactConstructor {
     record User(String username,
                 boolean active,
@@ -24,9 +25,9 @@ public class CompactConstructor {
 
         var user = new User("BEN", true, LocalDateTime.now());
 
-        System.out.println(user);
+        System.out.println("user = " + user);
 
-        var throwingUser = new User(null, true, LocalDateTime.now());
-
+        // THIS CALL THROWS
+        // var throwingUser = new User(null, true, LocalDateTime.now());
     }
 }

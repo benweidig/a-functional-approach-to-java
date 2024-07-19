@@ -1,11 +1,12 @@
-import java.util.List;
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 2 - Functional Java
+//
+// Example 2-8. Method references and Streams
+//
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 2 - Functional Java
- * 
- * Example 2-8. Method references and Streams
- */
+ import java.util.List;
+
 public class MethodReferencesAndStreams {
 
     // A simplistic Customer type so the code compiles

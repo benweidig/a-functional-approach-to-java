@@ -1,3 +1,8 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -5,10 +10,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working With Records
- */
 public class PointSerialization {
 
     record Point(int x, int y) implements Serializable {

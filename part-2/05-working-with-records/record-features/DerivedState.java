@@ -1,9 +1,10 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- */
 public class DerivedState {
 
     record User(String username,
@@ -21,6 +22,6 @@ public class DerivedState {
                                      true,
                                      null);
 
-        System.out.println("Logged in before: " + neverLoggedIn.hasLoggedInAtLeastOnce());
+        System.out.println("Logged in before = " + neverLoggedIn.hasLoggedInAtLeastOnce());
     }
 }

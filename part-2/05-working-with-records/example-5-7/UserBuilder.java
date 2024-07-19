@@ -1,14 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working with Records
+//
+// Example 5-7. User Builder
+//
+
 import java.time.LocalDateTime;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working with Records
- *
- * Example 5-7. User Builder
- *
- * This example is structured/named differently from the book,
- * so we don't need multiple files.
- */
 public class UserBuilder {
 
     record User(String username, boolean active, LocalDateTime lastLogin) {
@@ -52,7 +50,6 @@ public class UserBuilder {
         var builder = new Builder("ben").active(false).lastLogin(LocalDateTime.now());
 
         User user = builder.build();
-        System.out.println(user);
+        System.out.println("user = " + user);
     }
-
 }

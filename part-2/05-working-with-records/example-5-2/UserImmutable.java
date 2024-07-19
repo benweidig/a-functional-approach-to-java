@@ -1,12 +1,13 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 5 - Working With Records
+//
+// Example 5-2. Simple immutable User type
+//
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 5 - Working With Records
- *
- * Example 5-2. Simple immutable User type
- */
 public final class UserImmutable {
 
     private final String        username;

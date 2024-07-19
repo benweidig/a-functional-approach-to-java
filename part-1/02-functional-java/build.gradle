@@ -13,10 +13,10 @@ ext.examples = [
     'example-2-9': ['Memoization': 'Memoization with Map#computeIfAbsent'],
     'example-2-10': ['FirstClassCitizenship': 'First-class Java Lambdas'],
     'method-references': [
-        'MethodReferencesBoundNonStatic': 'Bound non-static method references',
-        'MethodReferencesBoundNonStaticThisSuper': 'Bound non-static method references (this/super)',
-        'MethodReferencesConstructor': 'Constructor references',
-        'MethodReferencesStatic': 'Static method references',
-        'MethodReferencesUnboundNonStatic': 'Unbound non-static method references',
+        'BoundNonStatic': 'Bound non-static method references',
+        'BoundNonStaticThisSuper': 'Bound non-static method references (this/super)',
+        'Constructor': 'Constructor references',
+        'Static': 'Static method references',
+        'UnboundNonStatic': 'Unbound non-static method references',
     ]
 ]
