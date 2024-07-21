@@ -14,16 +14,13 @@ public class FirstClassCitizenship {
 
         UnaryOperator<Integer> quadraticFn = x -> x * x;
 
-        var qresult = quadraticFn.apply(5);
-        System.out.println(qresult);
-        // => 25
+        var quadratic = quadraticFn.apply(5);
+        System.out.println("quadratic = " + quadratic);
 
         UnaryOperator<Integer> multiplyWithFive = multiplyWith(5);
 
-        var mresult = multiplyWithFive.apply(6);
-        System.out.println(mresult);
-        // => 25
-        // => 30
+        var result = multiplyWithFive.apply(6);
+        System.out.println("multiplyWithFive = " + result);
     }
 
     // METHOD ARGUMENT

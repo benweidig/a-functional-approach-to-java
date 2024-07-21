@@ -12,11 +12,11 @@ Function<String, String> func = String::toUpperCase;
 
 void acceptsUnary(UnaryOperator<String> unaryOp) {
     // ...
-};
+}
 
 void acceptsFunction(Function<String, String> func) {
     // ...
-};
+}
 
 // THESE TWO CALLS ARE OK
 acceptsUnary(unaryOp)

@@ -5,7 +5,7 @@
 // Example 2-8. Method references and Streams
 //
 
- import java.util.List;
+ mport java.util.List;
 
 public class MethodReferencesAndStreams {
 
