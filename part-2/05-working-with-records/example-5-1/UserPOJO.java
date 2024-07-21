@@ -5,7 +5,6 @@
 // Example 5-1. Simple User POJO
 //
 
-
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -88,6 +87,6 @@ public final class UserPOJO {
         user.setUsername("ben");
         user.setActive(true);
 
-        System.out.println(user);
+        System.out.println("user = " + user);
     }
 }

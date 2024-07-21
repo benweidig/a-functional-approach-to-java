@@ -17,7 +17,7 @@ public class FilesListing {
     public static void main(String... args) {
 
         // ADAPT AS NECESARY
-        var dir = Paths.get("../../../part-2/04-immutability");
+        var dir = Paths.get("../04-immutability");
 
         try (var stream = Files.list(dir)) {
             stream.map(Path::toFile)
@@ -25,7 +25,7 @@ public class FilesListing {
                   .map(File::getName)
                   .forEach(System.out::println);
         } catch (IOException e) {
-            // ...
+            System.err.println(e);
         }
     }
 }

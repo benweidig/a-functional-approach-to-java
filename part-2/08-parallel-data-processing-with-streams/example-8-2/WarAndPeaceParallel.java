@@ -19,7 +19,7 @@ public class WarAndPeaceParallel {
 
     public static void main(String... args) {
 
-        var location = Paths.get("../other/war-and-peace.txt");
+        var location = Paths.get("other/war-and-peace.txt");
 
         // CLEANUP PATTERNS
         var punctionaction = Pattern.compile("\\p{Punct}");

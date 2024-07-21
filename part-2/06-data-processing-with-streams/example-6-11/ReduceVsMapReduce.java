@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 6 - Data Processing with Streams
+//
+// Example 6-11. Three-arguments reduce() versus map + two-arguments reduce
+//
+
 import java.util.stream.Stream;
 
-/**
-/* A FUNCTIONAL APPROACH TO JAVA
-/* Chapter 6 - Data Processing with Streams
-/*
-/* Example 6-11. Three-arguments reduce() versus map + two-arguments reduce
- */
 public class ReduceVsMapReduce {
 
     public static void main(String... args) {

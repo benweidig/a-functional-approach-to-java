@@ -9,8 +9,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class Teeing {
 
@@ -37,6 +37,6 @@ public class Teeing {
                                              Collectors.counting()),
                         UserStats::new));
 
-        System.out.println("Stats: " + result);
+        System.out.println("stats = " + result);
     }
 }

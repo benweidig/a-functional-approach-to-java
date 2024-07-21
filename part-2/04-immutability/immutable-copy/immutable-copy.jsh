@@ -19,5 +19,4 @@ original.add("green")
 
 // CHECK CONTENT
 System.out.println("original = " + original)
-
 System.out.println("copy = " + copiedList)

@@ -15,6 +15,6 @@ public class ImmutableAccumulation {
                           .reduce(0,
                                   Integer::sum);
 
-        System.out.println("Total: " + total);
+        System.out.println("total = " + total);
     }
 }

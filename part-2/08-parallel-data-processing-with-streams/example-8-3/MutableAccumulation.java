@@ -19,6 +19,6 @@ public class MutableAccumulation {
             total += value;
         }
 
-        System.out.println(total);
+        System.out.println("total = " + total);
     }
 }

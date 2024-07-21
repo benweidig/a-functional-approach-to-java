@@ -26,6 +26,7 @@ record Rectangle(Origin origin, int width, int height) {
     }
 }
 
+
 var rect1 = new Rectangle(0, 123, 300, 400)
 var rect2 = Rectangle.atY(123, 300, 400)
 

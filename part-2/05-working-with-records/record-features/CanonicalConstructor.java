@@ -33,6 +33,5 @@ public class CanonicalConstructor {
 
         // THIS CALL THROWS
         // var throwingUser = new User(null, true, LocalDateTime.now());
-
     }
 }

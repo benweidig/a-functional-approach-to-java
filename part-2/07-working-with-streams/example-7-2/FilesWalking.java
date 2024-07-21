@@ -17,7 +17,7 @@ public class FilesWalking {
     public static void main(String[] args) {
 
         // ADAPT AS NECESARY
-        var start = Paths.get("./part-2/04-immutability");
+        var start = Paths.get("../04-immutability");
 
         try (var stream = Files.walk(start)) {
             stream.map(Path::toFile)
@@ -25,7 +25,7 @@ public class FilesWalking {
                   .sorted()
                   .forEach(System.out::println);
         } catch (IOException e) {
-            // ...
+            System.err.println(e);
         }
     }
 }

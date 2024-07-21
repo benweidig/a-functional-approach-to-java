@@ -1,4 +1,4 @@
-ext.exampleGroup = "Part 2 - Chapter 4: Functional JDK"
+ext.exampleGroup = 'Part 2 - Chapter 4: Functional JDK'
 
 ext.examples = [
     'unmodifiable-collections': [

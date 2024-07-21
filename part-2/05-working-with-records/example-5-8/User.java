@@ -4,7 +4,6 @@
 //
 // Example 5-8. Neste builder
 //
-//
 
 import java.time.LocalDateTime;
 

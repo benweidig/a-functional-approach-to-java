@@ -1,11 +1,12 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 6 - Data Processing with Streams
+//
+// Example 6-6. A simple Shape type
+//
+
 import java.util.List;
 
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 6 - Data Processing with Streams
- *
- * Example 6-6. A simple Shape type
- */
 public record Shape(int corners) implements Comparable<Shape> {
 
     // HELPER METHODS

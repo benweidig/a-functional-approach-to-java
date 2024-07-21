@@ -1,14 +1,14 @@
+//
+// A FUNCTIONAL APPROACH TO JAVA
+// Chapter 6 - Data Processing with Streams
+//
+// Example 6-1. Finding books with a for-loop
+//
+// SUPPOSED TASK: First three science-fiction books before 1970 sorted by title.
+//
+
 import java.util.List;
 import java.util.stream.Collectors;
-
-/**
- * A FUNCTIONAL APPROACH TO JAVA
- * Chapter 6 - Data Processing with Streams
- *
- * Example 6-2. Finding books with a Stream
- *
- * SUPPOSED TASK: First three science-fiction books before 1970 sorted by title.
- */
 
 public class FindingBooksStream {
 
@@ -42,6 +42,6 @@ public class FindingBooksStream {
                                    .limit(3)
                                    .collect(Collectors.toList());
 
-        System.out.println("Found books: " + result);
+        System.out.println("books = " + result);
     }
 }

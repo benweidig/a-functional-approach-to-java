@@ -19,7 +19,7 @@ public class FilesLines {
 
     public static void main(String... args) {
 
-        var location = Paths.get("war-and-peace.txt");
+        var location = Paths.get("example-7-4/war-and-peace.txt");
 
         // CLEANUP PATTERNS
         var punctionaction = Pattern.compile("\\p{Punct}");
@@ -52,6 +52,6 @@ public class FilesLines {
             // ...
         }
 
-        System.out.println(wordCount);
+        System.out.println("word count = " + wordCount);
     }
 }

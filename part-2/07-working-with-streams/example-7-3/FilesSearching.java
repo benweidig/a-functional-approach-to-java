@@ -16,7 +16,7 @@ public class FilesSearching {
 
     public static void main(String... args) {
         
-        var start = Paths.get("./part-2/04-immutability");
+        var start = Paths.get("../04-immutability");
 
         BiPredicate<Path, BasicFileAttributes> matcher =
             (path, attr) -> attr.isDirectory();
@@ -25,7 +25,7 @@ public class FilesSearching {
             stream.sorted()
                   .forEach(System.out::println);
         } catch (IOException e) {
-            // ...
+            System.err.println(e);
         }
     }
 }

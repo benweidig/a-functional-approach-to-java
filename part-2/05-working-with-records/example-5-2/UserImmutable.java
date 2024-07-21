@@ -69,11 +69,10 @@ public final class UserImmutable {
                                   .toString();
     }
 
-
     public static void main(String... args) {
 
         var user = new UserImmutable("ben", true, null);
 
-        System.out.println(user);
+        System.out.println("user = " + user);
     }
 }

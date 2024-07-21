@@ -19,7 +19,7 @@ public class WarAndPeaceSequential {
 
     public static void main(String... args) {
 
-        var location = Paths.get("../other/war-and-peace.txt");
+        var location = Paths.get("other/war-and-peace.txt");
 
         // CLEANUP PATTERNS
         var punctionaction = Pattern.compile("\\p{Punct}");
@@ -50,6 +50,6 @@ public class WarAndPeaceSequential {
             // ...
         }
 
-        System.out.println(wordCount);
+        System.out.println("word count = " + wordCount);
     }
 }

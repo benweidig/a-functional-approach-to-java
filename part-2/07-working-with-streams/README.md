@@ -8,21 +8,21 @@ Comparing iterative approaches.
 * `Stream.iterate`
 * `IntStream.iterate` (Java 8 &amp; 9+)
 
-[Stream iteration](stream-iteration)
+[Stream iteration](streams-iteration)
 
 
 ## Infinite Streams
 
 Illustrating a generated parallel unordered Stream overshooting its limit.
 
-[Infinite Stream](stream-infinite)
+[Infinite Stream](streams-infinite)
 
 
 ## From Arrays to Streams and Back
 
 Working with Object and Primitive Streams and Array.
 
-[toArray Terminal Op](stream-toarray)
+[toArray Terminal Op](streams-toarray)
 
 
 ## Working with File I/O
@@ -64,7 +64,7 @@ How to read a file line-by-line into a Stream.
 
 How to query Java Time API types.
 
-[Temporal Queries](temporal-query)
+[Temporal Queries](streams-temporal-query)
 
 
 ## More about Collectors
@@ -73,7 +73,7 @@ How to query Java Time API types.
 
 A collection of examples for Downstream collectors.
 
-[Downstream Collectors](downstream-collectors)
+[Downstream Collectors](streams-downstream-collectors)
 
 ### Example 7-5. Counting logins
 

@@ -7,7 +7,6 @@
 
 import java.util.List
 
-
 var numbers = List.of(1, 2, 3, 4, 5, 6)
 
 int total = numbers.stream() .reduce(0, Integer::sum);

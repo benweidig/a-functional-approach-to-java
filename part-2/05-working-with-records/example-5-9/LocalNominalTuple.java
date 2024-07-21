@@ -2,7 +2,7 @@
 // A FUNCTIONAL APPROACH TO JAVA
 // Chapter 5 - Working with Records
 // 
-// Example 5-9. Straem pipeline with localized Record
+// Example 5-9. Stremm pipeline with localized Record
 //
 
 import java.util.Comparator;

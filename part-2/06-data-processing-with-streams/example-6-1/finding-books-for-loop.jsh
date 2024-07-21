@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 //
 // A FUNCTIONAL APPROACH TO JAVA
 // Chapter 6 - Data Processing with Streams
@@ -12,6 +7,10 @@ import java.util.List;
 // SUPPOSED TASK: First three science-fiction books before 1970 sorted by title.
 //
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 enum Genre {
     DYSTOPIAN,
@@ -58,4 +57,4 @@ for (var book : books) {
     }
 }
 
-System.out.println("Found books: " + result)
+System.out.println("books = " + result)
