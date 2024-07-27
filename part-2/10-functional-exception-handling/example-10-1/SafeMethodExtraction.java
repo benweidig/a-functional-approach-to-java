@@ -23,12 +23,12 @@ public class SafeMethodExtraction {
     }
 
     public static void main(String... args) {
-        var result = Stream.of(Paths.get("SafeMethodExtraction.java"),
-                               Paths.get("safe-method-extraction.java"))
+        var result = Stream.of(Paths.get("example-10-1/SafeMethodExtraction.java"),
+                               Paths.get("example-10-1/safe-method-extraction.jsh"))
                            .map(SafeMethodExtraction::safeReadString)
                            .filter(Objects::nonNull)
                            .count();
 
-        System.out.println("Found: " + result);
+        System.out.println("files count = " + result);
     }
 }

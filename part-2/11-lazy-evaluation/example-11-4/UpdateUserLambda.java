@@ -15,8 +15,8 @@ public class UpdateUserLambda {
 
     record User(List<Role> roles) { }
 
-    static updateUser(User user,
-                      Supplier<List<Role>> availableRolesFn) {
+    static User updateUser(User user,
+                           Supplier<List<Role>> availableRolesFn) {
         return new User(availableRolesFn.get());
     }
 
@@ -35,9 +35,9 @@ public class UpdateUserLambda {
         // HOW TO USE
 
         var user = new User(Collections.emptyList());
-        System.out.println("User: " + user);
+        System.out.println("user = " + user);
         
         var updatedUser = updateUser(user, dao::loadAllAvailableRoles);
-        System.out.println("Updated User: " + updatedUser);
+        System.out.println("updated user = " + updatedUser);
     }
 }

@@ -20,6 +20,6 @@ public class HeadRecursion {
     public static void main(String... args) {
 
         var result = factorialHead(4L);
-        System.out.println("result: " + result);
+        System.out.println("result = " + result);
     }
 }

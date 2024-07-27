@@ -38,6 +38,6 @@ public class TreeNodeStructure {
                    Node.left("6",
                              Node.of("9"))));
 
-        System.out.println("Tree: " + root);
+        System.out.println("tree = " + root);
     }
 }

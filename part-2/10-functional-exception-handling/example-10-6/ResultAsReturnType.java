@@ -13,7 +13,9 @@ import java.util.stream.Stream;
 
 public class ResultAsReturnType {
 
-    record Result<V, E extends Throwable> (V value, E throwable, boolean isSuccess) {
+    record Result<V, E extends Throwable> (V value,
+                                           E throwable,
+                                           boolean isSuccess) {
 
         static <V, E extends Throwable> Result<V, E> success(V value) {
             return new Result<>(value, null, true);
@@ -34,13 +36,13 @@ public class ResultAsReturnType {
     }
 
     public static void main(String... args) {
-        var result = Stream.of(Paths.get("ResultAsReturnType.java"),
+        var result = Stream.of(Paths.get("example-10-6/ResultAsReturnType.java"),
                                Paths.get("invalid"),
-                               Paths.get("reasult-as-return-type.java"))
+                               Paths.get("example-10-6/result-as-return-type.jsh"))
                            .map(ResultAsReturnType::safeReadString)
                            .filter(Result::isSuccess)
                            .count();
 
-        System.out.println("Found: " + result);
+        System.out.println("files count = " + result);
     }
 }

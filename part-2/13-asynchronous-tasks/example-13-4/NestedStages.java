@@ -25,7 +25,6 @@ public class NestedStages {
             .thenCompose(Function.identity());
 
         Integer result = combined.get();
-
-        System.out.println("result: " + result);
+        System.out.println("result = " + result);
     }
 }

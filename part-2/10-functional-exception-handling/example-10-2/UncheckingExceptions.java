@@ -45,12 +45,12 @@ public class UncheckingExceptions {
     }
 
     public static void main(String... args) {
-        var result = Stream.of(Paths.get("UncheckingExceptions.java"),
-                               Paths.get("unchecking-exceptions.java"))
+        var result = Stream.of(Paths.get("example-10-2/UncheckingExceptions.java"),
+                               Paths.get("example-10-2/unchecking-exceptions.jsh"))
                            .map(UncheckingExceptions::safeReadString)
                            .filter(Objects::nonNull)
                            .count();
 
-        System.out.println("Found: " + result);
+        System.out.println("files count = " + result);
     }
 }

@@ -23,6 +23,6 @@ public class TailRecursion {
     public static void main(String... args) {
 
         var result = factorialTail(4L, 1L);
-        System.out.println("result: " + result);
+        System.out.println("result = " + result);
     }
 }

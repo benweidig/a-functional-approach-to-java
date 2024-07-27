@@ -1,53 +1,12 @@
-plugins {
-    id 'java'
-    id 'application'
-}
+ext.exampleGroup = 'Part 2 - Chapter 14: Design Patterns'
 
-group 'com.beliefdrivendesign.afatj'
-version '1.0-SNAPSHOT'
-
-task factoryOO(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.factory_pattern.oo.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task factoryFP(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.factory_pattern.fp.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task decoratorOO(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.decorator_pattern.oo.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task decoratorFP(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.decorator_pattern.fp.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task strategyOO(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.strategy_pattern.oo.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task strategyFP(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.strategy_pattern.fp.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task builderOO(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.builder_pattern.oo.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-task builderFP(type: JavaExec) {
-    mainClass = 'com.beliefdrivendesign.afatj.builder_pattern.fp.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-repositories {
-    mavenCentral()
-}
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+ext.examples = [
+    'factory-pattern-oo': ['Main': 'Factory Pattern (Object-oriented)'],
+    'factory-pattern-fp': ['Main': 'Factory Pattern (Functional)'],
+    'decorator-pattern-oo': ['Main': 'Decorator Pattern (Object-oriented)'],
+    'decorator-pattern-fp': ['Main': 'Decorator Pattern (Functional)'],
+    'strategy-pattern-oo': ['Main': 'Strategy Pattern (Object-oriented)'],
+    'strategy-pattern-fp': ['Main': 'Strategy Pattern (Functional)'],
+    'builder-pattern-oo': ['Main': 'Builder Pattern (Object-oriented)'],
+    'builder-pattern-fp': ['Main': 'Builder Pattern (Functional)'],
+]

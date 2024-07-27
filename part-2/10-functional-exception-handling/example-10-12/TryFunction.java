@@ -82,7 +82,9 @@ public class TryFunction {
     }
 
     public static void main(String... args) {
-        var result = Stream.of(Paths.get("TryFunction.java"), Paths.get("invalid"), Paths.get("try-function.java"))
+        var result = Stream.of(Paths.get("example-10-12/TryFunction.java"),
+                               Paths.get("invalid"),
+                               Paths.get("example-10-12/try-function.java"))
                            .map(fileLoader)
                            .flatMap(Optional::stream)
                            .count();

@@ -34,7 +34,7 @@ public class FutureFlowOfExecution {
         System.out.println("(main) after submitting the task");
 
         var theAnswer = future.get();
-        System.out.println("theAnswer: " + theAnswer);
+        System.out.println("theAnswer = " + theAnswer);
 
         System.out.println("(main) after the blocking call future.get()");
 

@@ -9,7 +9,6 @@ import java.util.Stack;
 
 public class TreeTraversalIterative {
 
-    
     record Node<T>(T value, Node<T> left, Node<T> right) {
         
         static <T> Node<T> of(T value, Node<T> left, Node<T> right) {

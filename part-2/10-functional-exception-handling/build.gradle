@@ -1,0 +1,14 @@
+ext.exampleGroup = 'Part 2 - Chapter 10: Functional Exception Handling'
+
+ext.examples = [
+    'example-10-1': ['SafeMethodExtraction': 'Extract throwing code into a safe method'],
+    'example-10-2': ['UncheckingExceptions': 'Unchecking java.util.Function'],
+    'sneaky-throws': ['SneakyThrows': 'Throwing an Exception \'sneakily\''],
+    'example-10-6': ['ResultAsReturnType': 'Using Result<V, E> as a return type'],
+    'example-10-7': ['ResultTransformers': 'Adding Transformers to Result<V, E>'],
+    'result-reactions-fallback': ['ResultReactionsFallback': 'React to result'],
+    'example-10-9': ['TryMinimal': 'Minimal Try<T, R> accepting a lambda and Exception handler'],
+    'example-10-10': ['TryHandling': 'Handling success and failure in Try<T, R>'],
+    'example-10-11': ['TryApply': 'Applying a value to Try'],
+    'example-10-12': ['TryFunction': 'Implementing Function<T, Optional<R>>'],
+]

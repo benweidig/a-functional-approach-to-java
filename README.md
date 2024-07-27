@@ -29,7 +29,7 @@ All examples are grouped by chapters, see:
 ./gradlew tasks
 ```
 
-The task name for each example is unique, and can be run without requiring the subproject:
+The task name for each example is unique and runs without requiring the subproject:
 
 ```shell
 # Actually runs :02-functional-java:example-2-9
@@ -40,7 +40,7 @@ The task name for each example is unique, and can be run without requiring the s
 ### JShell
 
 Examples with lowercase-dash-separated names are JShell-compatible files.
-They have the `.jsh` extension so they do not clash with the `.java` files for Gradle.
+They have the `.jsh` extension, so they do not clash with the `.java` files for Gradle.
 
 The examples from the book can mostly be run directly in [JShell](https://belief-driven-design.com/jshell-the-java-repl-82d804e6cbf/):
 
@@ -58,11 +58,6 @@ Some code, however, demonstrates invalid code, throws Exceptions, or won't compi
 Other examples won't compile due to parsing rules of new lines.
 I've tried to mark such examples with a comment in the header.
 
-
-### Chapter 14: Design Patterns
-
-[Chapter 14](./part-2/14-design-patterns/) is a dedicated Gradle-project with tasks for each example.
-See its [`README.md`](./part-2/14-design-patterns/README.md) for more info.
 
 
 ## Get the Book

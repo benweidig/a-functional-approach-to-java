@@ -33,11 +33,11 @@ public class UpdateUserEager {
         // HOW TO USE
 
         var user = new User(Collections.emptyList());
-        System.out.println("User: " + user);
+        System.out.println("user = " + user);
 
         var availableRoles = dao.loadAllAvailableRoles();
 
         var updatedUser = updateUser(user, availableRoles);
-        System.out.println("Updated User: " + updatedUser);
+        System.out.println("updated user = " + updatedUser);
     }
 }

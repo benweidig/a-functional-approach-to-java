@@ -1,0 +1,8 @@
+ext.exampleGroup = 'Part 2 - Chapter 13: Asynchronous Tasks'
+
+ext.examples = [
+    'example-13-1': ['FutureFlowOfExecution': 'Future<T> flow of execution'],
+    'example-13-2': ['CreationConvenience': 'CompletableFuture creation with convenience methods'],
+    'example-13-4': ['NestedStages': 'Unwrapping nested stages'],
+    'example-13-5': ['EitherRejected': 'Either operations and rejected stages'],
+]

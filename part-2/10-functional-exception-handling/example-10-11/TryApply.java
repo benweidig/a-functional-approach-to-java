@@ -87,6 +87,6 @@ public class TryApply {
                               .failure(str -> null)
                               .apply(path);
 
-        result.ifPresent(System.out::println);
+        System.out.println("resulst = " + result);
     }
 }

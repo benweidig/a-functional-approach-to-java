@@ -30,7 +30,6 @@ How to extract throwing code into a "safe" method.
 Java interface of a custom `java.util.Function` variant and how to use it.
 
 [Example 10-2](example-10-2)  
-[Example 10-3](example-10-3)
 
 
 ### Sneaky Throws
@@ -74,7 +73,7 @@ The stages during the creation of a Result type.
 
 ##### React to certain states and Fallback values
 
-[Result Reactiosnd and Fallback Values](result-reactions-fallback)
+[Result Reactions and Fallback Values](result-reactions-fallback)
 
 
 ### The Try/Success/Failure pattern

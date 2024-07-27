@@ -51,20 +51,21 @@ public class ResultTransformers {
     }
 
     public static void main(String... args) {
+
         // HANDLE ONLY SUCCESS CASE
-        var successOnly = Stream.of(Paths.get("ResultTransformers.java"),
+        var successOnly = Stream.of(Paths.get("example-10-7/ResultTransformers.java"),
                                     Paths.get("invalid"),
-                                    Paths.get("result-transformers.java"))
+                                    Paths.get("example-10-7/result-transformers.java"))
                                 .map(ResultTransformers::safeReadString)
                                 .map(result -> result.mapSuccess(String::toUpperCase)).flatMap(Optional::stream)
                                 .toList();
 
-        System.out.println("Found (successOnly): " + successOnly.size());
+        System.out.println("successOnly = " + successOnly.size());
 
         // HANDLE BOTH CASES
         var result = safeReadString(Paths.get("invalid")).map(success -> success.toUpperCase(),
                                                               failure -> "IO-Error: " + failure.getMessage());
 
-        System.out.println("Result: " + result);
+        System.out.println("both cases = " + result);
     }
 }

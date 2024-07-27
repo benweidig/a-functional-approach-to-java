@@ -1,0 +1,10 @@
+ext.exampleGroup = 'Part 2 - Chapter 12: Recursion'
+
+ext.examples = [
+    'example-12-1': ['HeadRecursion': 'Calculating factorials with head recursion'],
+    'example-12-2': ['TailRecursion': 'Calculating factorials with tail recursion'],
+    'example-12-3': ['TreeNodeStructure': 'Tree node structure'],
+    'example-12-4': ['TreeTraversalIterative': 'Iterative tree traversal'],
+    'example-12-5': ['TreeTraversalRecursive': 'Recursive tree traversal'],
+    'example-12-6': ['TreeTraversalRecursiveNode': 'Extend Node<T> with traversal method'],
+]

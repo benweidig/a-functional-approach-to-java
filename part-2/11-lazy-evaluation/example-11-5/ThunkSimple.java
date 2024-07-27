@@ -58,6 +58,6 @@ public class ThunkSimple {
 
         var updatedUser = updateUser(user, Thunk.of(dao::loadAllAvailableRoles));
 
-        System.out.println("Roles: " + updatedUser.roles().size());
+        System.out.println("roles count = " + updatedUser.roles().size());
     }
 }

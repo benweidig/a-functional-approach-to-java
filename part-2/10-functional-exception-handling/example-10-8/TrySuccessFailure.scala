@@ -22,4 +22,3 @@ object TrySuccssFailure extends App {
     case Failure(e) => println("Couldn't read file: " + e.getMessage)
   }
 }
-
