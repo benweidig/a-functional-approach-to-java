@@ -17,25 +17,21 @@ public class StreamFlatMap {
             return permissions.isEmpty();
         }
     }
-    
-    record Group(Optional<User> admin) {
-        // NO BODY
-    }
-    
-    record User(boolean isActive) {
-        // NO BODY
-    }
+
+    record Group(Optional<User> admin) { }
+
+    record User(boolean isActive) { }
 
     public static void main(String... args) {
-        
+
         User admin = new User(true);
-        
+
         Group group = new Group(Optional.of(admin));
-        
+
         List<Permissions> permissions = List.of(new Permissions(List.of("A", "B", "C"),
                                                                 group));
-        
-        List<User> activeUsers =
+
+                                                                List<User> activeUsers =
             permissions.stream()
                        .filter(Predicate.not(Permissions::isEmpty))
                        .map(Permissions::group)
@@ -44,6 +40,6 @@ public class StreamFlatMap {
                        .filter(User::isActive)
                        .toList();
 
-        System.out.println("Active users: " + activeUsers);
+        System.out.println("activeUsers = " + activeUsers);
     }
 }

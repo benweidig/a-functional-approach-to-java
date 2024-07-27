@@ -23,6 +23,9 @@ record User(long id,
 var user = new User(42L, "Ben", null);
 
 var fullname = user.fullname();
+System.out.println("fullname = " + fullname);
 
-// => NullPointerException
 var initials = user.initials();
+// => NullPointerException
+System.out.println("initials = " + initials);
+

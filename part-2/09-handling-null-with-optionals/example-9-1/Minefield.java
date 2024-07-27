@@ -29,10 +29,10 @@ public class Minefield {
         var user = new User(42L, "Ben", null);
 
         var fullname = user.fullname();
-        System.out.println("Fullname: " + fullname);
+        System.out.println("fullname = " + fullname);
 
         // => NullPointerException
         var initials = user.initials();
-        System.out.println("Initials: " + initials);
+        System.out.println("initials = " + initials);
     }
 }

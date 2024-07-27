@@ -17,23 +17,19 @@ public class FilterMapWithoutOptionals {
             return permissions.isEmpty();
         }
     }
-    
-    record Group(Optional<User> admin) {
-        // NO BODY
-    }
-    
-    record User(boolean isActive) {
-        // NO BODY
-    }
+
+    record Group(Optional<User> admin) { }
+
+    record User(boolean isActive) { }
 
     public static void main(String... args) {
 
         User user = new User(true);
         
-        Group admingGroup = new Group(Optional.of(user));
+        Group adminGroup = new Group(Optional.of(user));
         
         Permissions permissions = new Permissions(List.of("A", "B", "C"),
-                                        new Group(Optional.of(admingGroup)));
+                                                  adminGroup);
         
         boolean isActiveAdmin = false;
         
@@ -50,6 +46,6 @@ public class FilterMapWithoutOptionals {
             }
         }
         
-        System.out.println("Is Active Admin: " + isActiveAdmin);
+        System.out.println("isActiveAdmin = " + isActiveAdmin);
     }
 }

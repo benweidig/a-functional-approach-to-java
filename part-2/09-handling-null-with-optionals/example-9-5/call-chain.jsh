@@ -10,10 +10,11 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Predicate;
 
-record Content(boolean isPublished) { }
+record Content(String identifier,
+               boolean isPublished) { }
 
 Optional<Content> loadFromDB(String identifier) {
-    return Optional.of(new Content(false));
+    return Optional.of(new Content(identifier, true));
 }
 
 Map<String, Content> cache = new HashMap<>();
@@ -27,4 +28,6 @@ Optional<Content> get(String contentId) {
                    .filter(Content::isPublished); 
 }
 
-get("ABC");
+var content = get("ABC")
+System.out.println("content = " + content)
+

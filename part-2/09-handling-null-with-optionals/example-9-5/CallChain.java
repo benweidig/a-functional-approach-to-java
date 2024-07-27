@@ -10,15 +10,16 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Predicate;
 
-public class LoadingContentWithOptionalCallChain {
+public class CallChain {
 
-    record Content(boolean isPublished) {
+    record Content(String identifier,
+                   boolean isPublished) {
     }
 
     static final Map<String, Content> cache = new HashMap<>();
 
     static Optional<Content> loadFromDB(String identifier) {
-        return Optional.of(new Content(false));
+        return Optional.of(new Content(identifier, true));
     }
 
     static Optional<Content> get(String contentId) {
@@ -31,8 +32,9 @@ public class LoadingContentWithOptionalCallChain {
     }
 
     public static void main(String[] args) {
-        
-        get("ABC");
+
+        var content = get("ABC");
+        System.out.println("content = " + content);
     }
 }
 

@@ -27,9 +27,9 @@ public class NullTypeAmbiguity {
         // TEST TYPE OF NULL
 
         var notString = name instanceof String;
-        System.out.println("notString: " + notString);
+        System.out.println("notString ? " + notString);
 
         var stillNotString = (name) instanceof String;
-        System.out.println("stillNotString: " + stillNotString);
+        System.out.println("stillNotString = " + stillNotString);
     }
 }

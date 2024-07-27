@@ -12,7 +12,7 @@ Optional<T> pseudoReduce(BinaryOperator<T> accumulator) {
     boolean foundAny = false;
     T result = null;
 
-    for (T element : elements]) {
+    for (T element : elements) {
         if (!foundAny) {
             foundAny = true;
             result = element;

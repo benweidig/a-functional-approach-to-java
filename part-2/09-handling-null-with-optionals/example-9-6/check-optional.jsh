@@ -7,7 +7,7 @@
 
 import java.util.Optional;
 
-Optional<String> maybeValue = Optional.ofNullable(null);
+Optional<String> maybeValue = Optional.ofNullable(null)
 
 // VERBOSE VERSION
 if (maybeValue.isPresent()) {

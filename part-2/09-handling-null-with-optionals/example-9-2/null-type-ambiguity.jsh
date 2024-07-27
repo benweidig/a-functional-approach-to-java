@@ -11,21 +11,21 @@ void methodAcceptingString(String str) {
     // ...
 }
 
-methodAcceptingString(null);
+methodAcceptingString(null)
 
 
 // ACCESSING A "TYPED" NULL
 
-String name = null;
+String name = null
 
-var lowerCaseName = name.toLowerCase();
+var lowerCaseName = name.toLowerCase()
 // => NullPointerException
 
 
 // TEST TYPE OF NULL
 
-var notString = name instanceof String;
-// => false
+var notString = name instanceof String
+System.out.println("notString = " + notString)
 
-var stillNotString = ((String) name) instanceof String;
-// => false
+var stillNotString = ((String) name) instanceof String
+System.out.println("stillNotString = " + stillNotString)

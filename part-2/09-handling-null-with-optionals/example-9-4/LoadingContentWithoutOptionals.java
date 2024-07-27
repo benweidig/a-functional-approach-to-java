@@ -10,13 +10,13 @@ import java.util.Map;
 
 public class LoadingContentWithoutOptionals {
 
-    record Content(boolean isPublished) {
-    }
+    record Content(String identifier,
+                   boolean isPublished) { }
 
     static final Map<String, Content> cache = new HashMap<>();
 
     static Content loadFromDB(String identifier) {
-        return new Content(false);
+        return new Content(identifier, true);
     }
 
     static Content get(String contentId) {
@@ -49,6 +49,7 @@ public class LoadingContentWithoutOptionals {
 
     public static void main(String... args) {
 
-        get("ABC");
+        var content = get("ABC");
+        System.out.println("content = " + content);
     }
 }

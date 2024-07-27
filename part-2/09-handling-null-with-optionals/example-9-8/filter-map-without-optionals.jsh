@@ -16,20 +16,15 @@ record Permissions(List<String> permissions, Group group) {
     }
 }
 
-record Group(Optional<User> admin) {
-    // NO BODY
-}
+record Group(Optional<User> admin) { }
 
-record User(boolean isActive) {
-    // NO BODY
-}
+record User(boolean isActive) { }
 
-User admin = new User(true);
+User admin = new User(true)
 
-Group group = new Group(Optional.of(admin));
+Group group = new Group(Optional.of(admin))
 
-Permissions permissions = new Permissions(List.of("A", "B", "C"),
-                                          group);
+Permissions permissions = new Permissions(List.of("A", "B", "C"), group)
 
 boolean isActiveAdmin = false;
 
@@ -46,4 +41,4 @@ if (permissions != null && !permissions.isEmpty()) {
     }
 }
 
-System.out.println("Is Active Admin: " + isActiveAdmin);
+System.out.println("isActiveAdmin = " + isActiveAdmin);

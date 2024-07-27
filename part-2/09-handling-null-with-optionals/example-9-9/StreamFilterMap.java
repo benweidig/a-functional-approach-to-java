@@ -18,14 +18,10 @@ public class StreamFilterMap {
             return permissions.isEmpty();
         }
     }
-    
-    record Group(Optional<User> admin) {
-        // NO BODY
-    }
-    
-    record User(boolean isActive) {
-        // NO BODY
-    }
+
+    record Group(Optional<User> admin) { }
+
+    record User(boolean isActive) { }
 
     public static void main(String... args) {
         
@@ -45,5 +41,7 @@ public class StreamFilterMap {
                        .map(Optional::orElseThrow)
                        .filter(User::isActive)
                        .toList();
+
+        System.out.println("activeUsers = " + activeUsers);
     }
 }

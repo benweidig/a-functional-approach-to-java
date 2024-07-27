@@ -8,13 +8,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
-record Content(boolean isPublished) { }
+record Content(String identifier,
+               boolean isPublished) { }
 
 Content loadFromDB(String identifier) {
-    return new Content(false);
+    return new Content(identifier, true);
 }
 
-Map<String, Content> cache = new HashMap<>();
+Map<String, Content> cache = new HashMap<>()
 
 Content get(String contentId) {
 
@@ -44,4 +45,5 @@ Content get(String contentId) {
     return content;
 }
 
-get("ABC");
+var content = get("ABC")
+System.out.println("content = " + content)
