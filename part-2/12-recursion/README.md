@@ -19,34 +19,46 @@
 
 ### Example 12-1. Calculating factorials with head recursion
 
-JShell script calculating 4! with head-recursion.
+Calculating 4! with head-recursion.
 
-[`jshell/head-recursion.java`](jshell/head-recursion.java)
+[Example 12-1](example-12-1)
 
 ### Example 12-2. Calculating factorials with tail recursion
 
-JShell script calculating 4! with tail-recursion.
+Calculating 4! with tail-recursion.
 
-[`jshell/tail-recursion.java`](jshell/tail-recursion.java)
+[Example 12-2](example-12-2)
 
 
 ## A More Complex Example
 
 ### Example 12-3. Tree node structure
 
-JShell script of the shared Record / tree structure for the next two examples.
+The shared Record-based tree structure for the next two examples.
 
-[`jshell/tree-node.java`](jshell/tree-node.java)
-
+[Example 12-3](example-12-3)
 
 ### Example 12-4. Iterative tree traversal
 
-JShell script that iteratively traverses the tree.
+Iteratively traverse the tree.
 
-[`jshell/tree-traversal-iterative.java`](jshell/tree-traversal-iterative.java)
+[Example 12-4](example-12-4)
+
+### Example 12-5. Recursive tree traversal
+
+Recursively traverse the tree.
+
+[Example 12-5](example-12-5)
+
+### Example 12-6. Extend Node<T> with traversal method
+
+Let the Nodes traverse themselves.
+
+[Example 12-6](example-12-6)
+
 
 ## Recursion-like Streams
 
 A short example of how to create a "recursion-like" Stream.
 
-[`other/stream-recursion.md`](other/stream-recursion.md)
+[Stream recursion](stream-recursion/stream-recursion.md)

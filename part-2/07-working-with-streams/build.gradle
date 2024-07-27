@@ -1,0 +1,26 @@
+ext.exampleGroup = 'Part 2 - Chapter 7: Working with Streams'
+
+ext.examples = [
+    'streams-iteration': [
+        'Java8': 'for-loop Vs Stream.iterate (Java 8)',
+        'Java9': 'for-loop Vs Stream.iterate (Java 9+)',
+    ],
+    'streams-infinite': ['InfiniteStreams': 'Infinit Streams'],
+    'streams-toarray': [
+        'ObjectStreamToArray': 'Object-based Stream to Array',
+        'PrimitiveStreamToArray': 'Primitive-based Stream to Array',
+    ],
+    'example-7-1': ['FilesListing': 'Listing directories in a folder'],
+    'example-7-2': ['FilesWalking': 'Walking the Filesystem'],
+    'example-7-3': ['FilesSearching': 'Finding Files'],
+    'example-7-4': ['FilesLines': 'Counting words in "War and Peace"'],
+    'streams-temporal-query': ['TemporalQuery': 'JSR310'],
+    'streams-downstream-collectors': [
+        'Filter': 'Intermediate Vs collect filter op',
+        'Flatten': 'Flat-mapping',
+        'ReduceSum': 'Building a sum with reduce op',
+        'GroupBySimple': 'Simple elements grouping',
+        'GroupByMapping': 'Grouping with the help of mapping',
+    ],
+    'example-7-5': ['Teeing': 'Counting logins'],
+]

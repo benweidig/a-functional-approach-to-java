@@ -4,118 +4,123 @@
 
 ### Example 6-1. Finding books with a for-loop
 
-JShell script illustrating external iteration with a `for`-loop.
+Processing a `List<Book>` in a `for`-loop.
 
-[`jshell/finding-books-for-loop.java`](jshell/finding-books-for-loop.java)
+[Example 6-1](example-6-1)
 
 
 ## Streams as Functional Data Pipelines
 
 ### Example 6-2. Finding books with a Stream
 
-JShell script illustrating internal iteration with a Stream.
 
-[`jshell/finding-books-stream.java`](jshell/finding-books-stream.java)
+Illustrating internal iteration with a Stream to find books.
+
+[Example 6-2](example-6-2)
 
 ### Spliterator, the Backbone of Streams
 
-#### Example 6-3. Spliterator characteristics of `HashSet<T>`
+#### Example 6-3. The java.util.Spliterator interface
+
+Simplified variant of the `java.util.Spliterator<T>` interface.
+
+[Example 6-3](example-6-3)
+
+#### Example 6-4. Spliterator characteristics of `HashSet<T>`
 
 Excerpt from `java.util.HashSet` highlighting its Spliterator characteristics.
 
-[`other/HashSet.java`](other/HashSet.java)
+[Example 6-4](example-6-4)
 
 
 ## Building Stream Pipelines
 
 ### Creating a Stream
 
-#### Example 6-4. Simplified Stream creation for Collection types
+#### Example 6-5. Simplified Stream creation for Collection types
 
 Excerpt from `java.util.Collection` showing the retrofitted Stream-related methods.
 
-[`other/Collection.java`](other/Collection.java)
+[Example 6-5](example-6-5)
 
 
 ### Doing the Work
 
-#### Example 6-5. A simple Shape type
+#### Example 6-6. A simple Shape type
 
 A simple Shape Record reused in the upcoming examples.
 
-[`jshell/shape.java`](jshell/shape.java)
+[Example 6-6](example-6-6)
 
-#### Example 6-6. Shape flatMap versus mapMulti
 
-JShell script showing the difference between the `flatMap` and `mapMulti` operation.
+#### Example 6-7. Shape flatMap versus mapMulti
 
-[`jshell/flat-map-map-multi.java`](jshell/flat-map-map-multi.java)
+The difference between the `flatMap` and `mapMulti` operation.
 
-#### Example 6-7. Peeking into a Stream
+[Example 6-7](example-6-7)
 
-JShell script that peeks into a Stream.
+#### Example 6-8. Peeking into a Stream
 
-[`jshell/peek.java`](jshell/peek.java)
+Peeking into a Stream.
+
+[Example 6-8](example-6-8)
 
 
 ### Terminating the Stream
 
-#### Example 6-8. Finding the max number of a collection
+#### Example 6-9. Finding the max number of a collection
 
-JShell script illustrating how to find the maximum number in a Collection.
+Illustrating how to find the maximum number in a Collection.
 
-[`jshell/max-in-collection.java`](jshell/max-in-collection.java)
+[Example 6-9](example-6-9)
 
-#### Example 6-9. Reduce-like for-loop
+#### Example 6-10. Reduce-like for-loop
 
-JShell script of a generic reduce-like `for`-loop and the implementation of the previous `max` method with it.
+Generic reduce-like `for`-loop and the implementation of the previous `max` method with it.
 
-[`jshell/reduce-like-for-loop.java`](jshell/reduce-like-for-loop.java)
+[Example 6-10](example-6-10)
 
-#### Example 6-10. Three-arguments reduce() versus map + two-arguments reduce
+#### Example 6-11. Three-arguments reduce() versus map + two-arguments reduce
 
-JShell script showing the difference between the `reduce` operation and `map + reduce`.
+Showing the difference between the `reduce` operation and `map + reduce`.
 
-[`jshell/reduce-vs-map-reduce.java`](jshell/reduce-vs-map-reduce.java)
+[Example 6-11](example-6-11)
 
-#### Example 6-11. Aggregate elements with the reduce operation
+#### Example 6-12. Aggregate elements with the reduce operation
 
-JShell script using the `reduce` operation to aggregate Stream elements.
+Using the `reduce` operation to aggregate Stream elements.
 
-[`jshell/reduce-aggregate.java`](jshell/reduce-aggregate.java)
+[Example 6-12](example-6-12)
 
-#### Example 6-12. Immutable accumulation of numbers with a Stream
+#### Example 6-13. Immutable accumulation of numbers with a Stream
 
-JShell script using the `reduce` operation for immutable accumulation of numbers.
+Using the `reduce` operation for immutable accumulation of numbers.
 
-[`jshell/reduce-immutable-aggregation.java`](jshell/reduce-immutable-aggregation.java)
+[Example 6-13](example-6-13)
 
+#### Example 6-14. Concatenating String elements with reduce and collect
 
-#### Example 6-13. Concatenating String elements with reduce and collect
+Illustrating the difference between the `reduce` and `collect` operations for concatenating String elements.
 
-JShell script illustrating the difference between the `reduce` and `collect` operations for concatenating String elements.
-
-[`jshell/reduce-vs-collect.java`](jshell/reduce-vs-collect.java)
+[Example 6-14](example-6-14)
 
 
 ### The Cost of Operations
 
-#### Example 6-14. Fruit pipeline (naïve)
+#### Example 6-15. Fruit pipeline (naïve)
 
-Naïve JShell script for processing fruits.
+Naïve fruit processing.
 
-[`jshell/fruits-naive.java`](jshell/fruits-naive.java)
+[Example 6-15](example-6-15)
 
-#### Example 6-15. Fruit pipeline (improved)
+#### Example 6-16. Fruit pipeline (improved)
 
 Cost-optimized Stream pipeline to process fruits.
 
-[`jshell/fruits-improved.java`](jshell/fruits-improved.java)
+[Example 6-16](example-6-16)
 
 #### Short-Circuiting Operations
 
-JShell scripts of how operations might get dropped if they aren't relevant to the result.
+How operations might get dropped if they aren't relevant to the result.
 
-[`jshell/short-circuiting-dropped.java`](jshell/short-circuiting-dropped.java)  
-[`jshell/short-circuiting-not-dropped.java`](jshell/short-circuiting-not-dropped.java)
-
+[Short-Circuiting Operations](short-circuit)

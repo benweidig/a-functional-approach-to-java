@@ -1,0 +1,13 @@
+ext.exampleGroup = 'Part 2 - Chapter 9: Handling Null with Optionals'
+
+ext.examples = [
+    'example-9-1': ['Minefield': 'A minefield of possible nulls'],
+    'example-9-2': ['NullTypeAmbiguity': 'null type ambiguity'],
+    'example-9-4': ['LoadingContentWithoutOptionals': 'Loading content without Optionals'],
+    'example-9-5': ['CallChain': 'Loading content with an Optional call chain'],
+    'example-9-6': ['CheckOptional': 'Checking for Optional values'],
+    'example-9-7': ['FilterMapOptional': 'Intermediate operations to find an active admin'],
+    'example-9-8': ['FilterMapWithoutOptionals': 'Finding an active admin without Optionals'],
+    'example-9-9': ['StreamFilterMap': 'Optionals as Stream elements'],
+    'example-9-10': ['StreamFlatMap': 'Optionals as Stream elements with flatMap'],
+]

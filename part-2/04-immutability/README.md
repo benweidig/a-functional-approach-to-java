@@ -6,27 +6,26 @@
 
 #### Unmodifiable Collections
 
-JShell scripts of unmodifiable `List<T>` variables.
+Example of unmodifiable Collections.
 
-[`jshell/unmodifiable-list-exception.java`](jshell/unmodifiable-list-exception.java)  
-[`jshell/unmodifiable-list-modify-original.java`](jshell/unmodifiable-list-modify-original.java)
+[unmodifiable-collections](unmodifiable-collections)
 
 #### Immutable Copies
 
-JShell script showing how to create immutable copies of Collections.
+How to create immutable copies of Collections.
 
-[`jshell/immutable-copy.java`](jshell/immutable-copy.java)
+[immutable-copy](immutable-copy)
 
 
 ### Immutable Math
 
-JShell script showing how to do math with `BigDecimal`.
+Doing immutable math with `BigDecimal`.
 
-[`jshell/immutable-math.java`](jshell/immutable-math.java)
+[immutable-math](immutable-math)
 
 
 ### The final keyword
 
 Java class demonstrating `final` references.
 
-[`java/CollectionsFinalReferences.java`](java/CollectionsFinalReferences.java)
+[Example 4-1](example-4-1)

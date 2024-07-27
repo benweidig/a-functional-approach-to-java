@@ -1,0 +1,8 @@
+ext.exampleGroup = 'Part 1 - Chapter 3: Functional JDK'
+
+ext.examples = [
+    'example-3-1': ['ArityCompatibility': 'Java arity compatibility'],
+    'example-3-2': ['FunctionalComposition': 'Functional composition direction'],
+    'example-3-6': ['CompositorUsage': 'Using the functional compositor'],
+    'bridging-functional-interfaces': ['BridgingFunctionalInterfaces': 'Bridge equal but incompatible functional interfaces'],
+]

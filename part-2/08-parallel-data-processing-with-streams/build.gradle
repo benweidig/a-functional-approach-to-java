@@ -1,0 +1,9 @@
+ext.exampleGroup = 'Part 2 - Chapter 9: Parallel Data Processing with Streams'
+
+ext.examples = [
+    'example-8-1': ['WarAndPeaceSequential': 'Sequentially counting words in "War and Peace"'],
+    'example-8-2': ['WarAndPeaceParallel': 'Parallel counting words in "War and Peace"'],
+    'example-8-3': ['MutableAccumulation': 'Mutable accumulation with a for-loop'],
+    'example-8-4': ['ImmutableAccumulation': 'Immutable accumulation of numbers with a Stream'],
+    'example-8-5': ['RandomNumberStats' : 'Random number statistics'],
+]

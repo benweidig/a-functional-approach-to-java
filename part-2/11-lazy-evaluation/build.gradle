@@ -1,0 +1,13 @@
+ext.exampleGroup = 'Part 2 - Chapter 11: Lazy Evaluation'
+
+ext.examples = [
+    'example-11-1': ['LazyVersusStrict': 'Lazy Evaluation with Java and Suppliers'],
+    'example-11-2': ['ShortCircuit': 'Usage of logical short-circuit operators'],
+    'example-11-3': ['UpdateUserEager': ' Updating a User with eager method arguments'],
+    'example-11-4': ['UpdateUserLambda': 'Updating a User with a lambda'],
+    'example-11-5': ['ThunkSimple': 'A simple Thunk<T>'],
+    'lazy-maps': [
+        'Lazy': 'Lazy User',
+        'NonLazy': 'Non-Lazy User'
+    ],
+]

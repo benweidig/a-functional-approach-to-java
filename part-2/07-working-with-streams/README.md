@@ -2,144 +2,89 @@
 
 ## Iterative Streams
 
-JShell scripts showing three variants of an iteration:
+Comparing iterative approaches.
 
 * `for`-loop
 * `Stream.iterate`
-* `IntStream.iterate` (Java 9+)
+* `IntStream.iterate` (Java 8 &amp; 9+)
 
-[`jshell/iterative-stream-for-loop.java`](jshell/iterative-stream-for-loop.java)  
-[`jshell/iterative-stream-intstream-iterate-java8.java`](jshell/iterative-stream-intstream-iterate-java8.java)  
-[`jshell/iterative-stream-intstream-iterate-java9.java`](jshell/iterative-stream-intstream-iterate-java9.java)
+[Stream iteration](streams-iteration)
+
 
 ## Infinite Streams
 
-JShell script illustrating a generated parallel unordered Stream overshooting its limit.
+Illustrating a generated parallel unordered Stream overshooting its limit.
 
-[`jshell/generative-stream-parallel-unordered.java`](jshell/generative-stream-parallel-unordered.java)
+[Infinite Stream](streams-infinite)
 
 
 ## From Arrays to Streams and Back
 
-### Object-Type Arrays
+Working with Object and Primitive Streams and Array.
 
-JShell script showing how to create a `String[]` from a Stream.
-
-[`jshell/stream-toarray.java`](jshell/stream-toarray.java)
+[toArray Terminal Op](streams-toarray)
 
 
 ## Working with File I/O
 
 ### Reading Directory Contents
 
-#### Example 7-1. Listing a directory
+#### Example 7-1. Listing folders in a directory
 
-JShell script listing a directory.
-This script must be run in the root directory of the repository, e.g. `jshell < ./part-2/07-working-with-streams/io-listing.java`.
+How to list contents of a directory.
 
-[`jshell/io-listing.java`](jshell/io-listing.java)
-
+[Example 7-1](example-7-1)
 
 ### Depth-First Directory Traversal
 
 #### Example 7-2. Walking the Filesystem
 
-JShell script walking a directory.
-This script must be run in the root directory of the repository, e.g. `jshell < ./part-2/07-working-with-streams/io-walking.java`.
+Walking a directory.
 
-[`jshell/io-waling.java`](jshell/io-walking.java)
-
+[Example 7-2](example-7-2)
 
 ### Searching the Filesystem
 
-#### Example 7-3. Finding Files
+#### Example 7-3. Finding Folders
 
-JShell script illustrating how to search a directory.
-This script must be run in the root directory of the repository, e.g. `jshell < ./part-2/07-working-with-streams/io-searching.java`.
-
-[`jshell/io-searching.java`](jshell/io-searching.java)
-
+[Example 7-3](example-7-3)
 
 ### Reading Files Line-By-Line
 
 #### Example 7-4. Counting words in “War and Peace”
 
-JShell script illustrating how to search a directory.
-This script must be run in its directory to find the text file.
+How to read a file line-by-line into a Stream.
 
-[`jshell/io-line-by-line.java`](jshell/io-line-by-line.java)
+[Example 7-4](example-7-4)
+
 
 ## Dealing with Date and Time
 
 #### Querying Temporal Types
 
-JShell script showing how to query Java Time API types.
+How to query Java Time API types.
 
-[`jshell/time-api-query.java`](jshell/time-api-query.java)
+[Temporal Queries](streams-temporal-query)
 
 
 ## More about Collectors
 
 ### Downstream Collectors
 
-#### Transforming Elements
+A collection of examples for Downstream collectors.
 
-JShell script showing how to group Stream elements by one of the element's properties.
+[Downstream Collectors](streams-downstream-collectors)
 
-[`jshell/downstream-transform-groupby-simple.java`](jshell/downstream-transform-groupby-simple.java)
+### Example 7-5. Counting logins
 
-JShell script showing how to group Stream elements with a downstream Collector to map grouped elements.
+How to use 2 Downstream Collectors by teeing.
 
-[`jshell/downstream-transform-groupby-mapping.java`](jshell/downstream-transform-groupby-mapping.java)
-
-JShell script illustrating how to extract a downstream collector to keep things simpler.
-
-[`jshell/downstream-transform-groupby-mapping-variable.java`](jshell/downstream-transform-groupby-mapping-variable.java)
-
-#### Reducing Elements
-
-JShell script showing how to sum up logs with nested downstream Collectors.
-
-[`jshell/downstream-reduce-sum-up.java`](jshell/downstream-reduce-sum-up.java)
-
-JShell script showing how to sum up logs with a single downstream Collector.
-
-[`jshell/downstream-reduce-sum-up-simplified.java`](jshell/downstream-reduce-sum-up-simplified.java)
-
-JShell script showing how to sum up logs with a specialized downstream Collector.
-
-[`jshell/downstream-reduce-sum-up-specialized.java`](jshell/downstream-reduce-sum-up-specialized.java)
-
-#### Flattening Collections
-
-JShell script illustrating how to flatten Collection elements during collection.
-
-[`jshell/downstream-flatten.java`](jshell/downstream-flatten.java)
-
-#### Filtering Elements Collections
-
-JShell script illustrating how to filter elements during collection.
-
-[`jshell/downstream-filter.java`](jshell/downstream-filter.java)
-
-#### Composite Collectors
-
-JShell script showing how to use the `teeing` Collector.
-
-[`jshell/downstream-teeing.java`](jshell/downstream-teeing.java)
-
+[Example 7-5](example-7-5)
 
 ### Creating Your Own Collectors
 
 #### Example 7-6. Custom Collector for joining String elements
 
-Java class showing a `String`-joining Collector.
+How to create a `String`-joining Collector.
 
-[`java/Joinector.java`](jshell/Joinector.java)
-
-
-#### Joinector with Collector.of
-
-JShell script of using the `Collector.of` factory method to create the previous `Joinector` Collector.
-
-[`java/joinector.java`](jshell/joinector.java)
+[Example 7.6](example-7-6)

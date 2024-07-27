@@ -1,0 +1,10 @@
+Compiled from "UserImmutable.java"
+public final class UserImmutable {
+  public User(java.lang.String, boolean, java.time.LocalDateTime);
+  public java.lang.String getUsername();
+  public boolean isActive();
+  public java.time.LocalDateTime getLastLogin();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

@@ -1,23 +1,22 @@
 # Chapter 14: (Functional) Design Patterns
 
-The examples of this chapter are designed as a Gradle project.
 
 ## Factory Pattern
 
-`./gradlew factoryOO`  
-`./gradlew factoryFP`
+[Object-oriented](factory-pattern-oo)  
+[Functional](factory-pattern-fp)  
 
 ## Decorator Pattern
 
-`./gradlew decoratorOO`  
-`./gradlew decoratorFP`
+[Object-oriented](decorator-pattern-oo)  
+[Functional](decorator-pattern-fp)  
 
 ## Strategy Pattern
 
-`./gradlew strategyOO`  
-`./gradlew strategyFP`
+[Object-oriented](strategy-pattern-oo)  
+[Functional](strategy-pattern-fp)  
 
 ## Builder Pattern
 
-`./gradlew builderOO`  
-`./gradlew builderFP`
+[Object-oriented](builder-pattern-oo)  
+[Functional](builder-pattern-fp)  
